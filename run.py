@@ -11,8 +11,8 @@ def big_choice():
     print("\n----------------------------------------------------------------------")
     print("\n You wake up and put on some clothes, grab a can of caffinated energy drink")
     print("and sit infront of your computer screen, ready for another day of coding.")
-    print("I mean, that's what you should be doing... Is is what you're going to do?")
-    print("\nIt's probably time to start 'work', the hardest part is starting!")
+    print("I mean, that's what you should be doing... That is what you're going to do?")
+    print("\n It's probably time to start 'work', the hardest part is starting!")
     print("Just one quick 'game'? I mean, you have got ALL day to study...")
     print("Feet up, music on and finish your 'drink'. You need that caffeine.")
     player_choice = input("Urgh... Mornings are the worst. What are you going to do?\n")
@@ -23,17 +23,19 @@ def big_choice():
     elif player_choice == "game":
       choices.append("game")
       break
-    elif player.choice == "quit":
+    elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
+      break
     elif player_choice == "drink":
+      print("\n----------------------------------------------------------------------\n")
       print("You open up 'Lo-Fi chill hop beats to study slash relax to' and click play")
       print("Turn up the volume, put your feet up on the desk and close your eyes.")
       print("Bliss! Well, until you reach for for your trusty energy drink...")
       print("Which is lying on it's side, it's contents emptied all over your keyboard.")
       print("Wow... The day is over before it began. Back to bed?")
+      break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-
 
 def good_choice_one():
   """
@@ -55,12 +57,12 @@ def good_choice_one():
     elif player_choice == "youtube":
       choices.append("youtube")
       break
-    elif player.choice == "quit":
+    elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
+      break
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
-
-
+      print(f"You entered '{player_choice}', please enter one of the given keywords.")
+   
 def good_choice_two():
   """
   Good path, second choice. Currently in 'G'.
@@ -81,11 +83,11 @@ def good_choice_two():
     elif player_choice == "code":
       choices.append("code")
       break
-    elif player.choice == "quit":
+    elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
+      break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-
 
 def good_choice_three():
   """
@@ -103,13 +105,144 @@ def good_choice_three():
     if player_choice == "password":
       choices.append("password")
       break
-    elif player.choice == "quit":
+    elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
+      break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
       
+def good_choice_end_one():
+  """
+  Good path, dead end terminal. Currently in 'E'.
+  Possible choices are endings '4' and '5'.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------")
+    print("\n It's been a couple of hours now, you've watched a man making stone age tools")
+    print("using only his hands. You've seen an American couple convert a van in to a camper")
+    print("van. And you've wathced several episodes of How It's Made...")
+    print("\n None of this is getting work done! Are you just going to watch 'more' videos?")
+    print("Back to 'bed'!? You haven't done anything! Do not turn this computer off!")
+    player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
+    player_choice = player_choice.lower()
+    if player_choice == "more":
+      print("\n----------------------------------------------------------------------")
+      print("Bonsai trimming masters. Bob Ross paintings. Theme park histories...")
+      print("Rock climbing championships, backpacking videos, DIY aquariums and")
+      print("Independent film making. You've wasted another day in a YouTube rabbit hole!")
+      break
+    elif player_choice == "bed":
+      print("\n----------------------------------------------------------------------")
+      print("Safe and warm, an episode of Family Guy playing on your phone next to you.")
+      print("You're not watching, just listening, until you drift off back to sleep.")
+      print("Behind schedule and extra work to do tomorrow? Not todays problem!")
+      break
+    elif player_choice == "quit":
+      print("Game terminated. Thank you for playing.")
+      break
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
 
-# Main game function
+def good_choice_end_two():
+  """
+  Good path, dead end terminal. Currently in 'J'.
+  Possible choices are endings '9' and '10'.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------")
+    print("\n Mmmm, chocolate. There's a jumbo bag of peanut M&Ms that's been waiting for")
+    print("you, and today is the day! You rip open and the bag and just a couple turns to")
+    print("a few more won't hurt. You look down and you've eaten more than half of a bag...")
+    print("\n Well, it's less than one portion left so you might as well 'finish' them off!")
+    print("Or do you think you need a 'milkshake' to wash down this tasty snack.")
+    player_choice = input("Don't do it! You're still young and have so much to live for!\n")
+    player_choice = player_choice.lower()
+    if player_choice == "milkshake":
+      print("WHAT SORT OF IDEA WAS THIS!? You were already full, now you can barely move!")
+      print("You sit there with less than half a milkshake and a few M&Ms left over, but,")
+      print("we both know you're not going to stop there. You enter a food coma and die.")
+      break
+    elif player_choice == "finish":
+      print("TOO... MUCH... CHOCOLATE! It got out of hand and now you feel too sick to study.")
+      print("What a day... You can go out later and buy a new bag to replace the one you've")
+      print("devoured today. What are the chances this will happen again tomorrow?")
+      break
+    elif player_choice == "quit":
+      print("Game terminated. Thank you for playing.")
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+
+def secret_ending():
+  """
+  Good path, secret ending. Currently in 'L'.
+  Possible choices are endings '12', '13' and '15'.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------")
+    print("\n The password was password!? You need to change that... Unbelievable.")
+    print("Apart from that, you're becoming a code master! Projects submitted and all of this")
+    print("hard work is starting to pay off. You're having fun and making the most of things.")
+    print("\n Maybe it's time for some 'music'.")
+    print("Or a terrible 'joke'?")
+    print("Or are you just here for the 'hero' ending? Typical...")
+    player_choice = input("\n")
+    player_choice = player_choice.lower()
+    if player_choice == "music":
+      print("\n----------------------------------------------------------------------\n")
+      print("Never gonna give you up")
+      print("Never gonna let you down")
+      print("Never gonna run around and desert you.")
+      print("Never gonna make you cry")
+      print("Never gonna say goodbye")
+      print("Never gonna tell a lie and hurt you!")
+      break
+    if player_choice == "joke":
+      print("\n----------------------------------------------------------------------\n")
+      print("Why is Voldemort so good with computers?")
+      print("...")
+      print("He's fluent in Python (worth it, right?)")
+      break
+    if player_choice == "hero":
+      print("\n----------------------------------------------------------------------\n")
+      print("\n Your hard work has been noticed and you're noticed by top companies on LinkedIn")
+      print("Using your coding knowledge you've built apps that detect and help eliminate")
+      print("almost every known disease to humankind. Oh, and you're like super rich. And")
+      print("erm, lots of very attractive, funny, amazing people all want to marry you!")
+      print(f"\n All because you decided to {choices[0]}, use {choices[1]} and write pro {choices[2]}.")
+      print("Excellent work, you're a god among coders <3")
+      break
+    elif player_choice == "quit":
+      print("Game terminated. Thank you for playing.")
+      break
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+ 
+def bad_choice_one():
+  """
+  Bad path, first choice. currently in B.
+  Possible choices are 'D' and 'F'.
+  """
+  while True:
+    print("\n\n\n You wake up and put on some clothes, grab a can of caffinated energy drink")
+    print("and sit infront of your computer screen, ready for another day of coding.")
+    print("I mean, that's what you should be doing... Is is what you're going to do?")
+    print("\nIt's probably time to start 'work', the hardest part is starting!")
+    print("Just one quick 'game'? I mean, you have got ALL day to study...")
+    print("Feet up, music on and finish your 'drink'. You can't start without it.")
+    player_choice = input("Urgh... Mornings are the worst. What are you going to do?\n")
+    player_choice = player_choice.lower()
+    if player_choice == "work":
+      choices.append("work")
+      break
+    elif player_choice == "game":
+      choices.append("game")
+      break
+    elif player_choice == "quit":
+      print("Game terminated. Thank you for playing.")
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+
+# Main game function.
 def main_game():
   """
   Main game functions, will run in order as the game progresses.
@@ -117,10 +250,18 @@ def main_game():
   big_choice()
   if "work" in choices: 
     good_choice_one()
+    if "slack" in choices:
+      good_choice_two()
+      if "code" in choices:
+        good_choice_three()
+      elif "chocolate" in choices:
+        good_choice_end_two()
+    elif "youtube" in choices:
+      good_choice_end_one()
   elif "game" in choices:
     bad_choice_one()
-  else:
-    print("ERROR MESSAGE. CHOICES NOT FOUND")
+  if "work" and "slack" and "code" in choices:
+    secret_ending()
 
 # ASCII Art landing page, while loop which requires 'ready' to escape.
 print("""
