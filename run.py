@@ -22,12 +22,40 @@ def big_choice():
     elif player_choice == "game":
       choices.append("game")
       break
+    elif player.choice == "quit":
+      print("Game terminated. Thank you for playing.")
     elif player_choice == "drink":
       print("You open up 'Lo-Fi chill hop beats to study slash relax to' and click play")
       print("Turn up the volume, put your feet up on the desk and close your eyes.")
       print("Bliss! Well, until you reach for for your trusty energy drink...")
       print("Which is lying on it's side, it's contents emptied all over your keyboard.")
       print("Wow... The day is over before it began. Back to bed?")
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+
+
+def good_choice_one():
+  """
+  Good path, first choice. Currently in 'C'.
+  Possible choices are 'E' and 'G'.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------")
+    print("\n You're up and running! You load up for favorite IDE, find the bookmark")
+    print("for your latest online lesson and hit play. You take a sip of caffeine++ and")
+    print("try to zone in on what's going on. Superclasses? Mixins!? Inheritance. What?")
+    print("\n It's ok, you've got this. Check through 'slack' and see if there's any tips.")
+    print("Or open 'youtube' and come back to it in a little bit, it's too early for this.")
+    player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
+    player_choice = player_choice.lower()
+    if player_choice == "slack":
+      choices.append("slack")
+      break
+    elif player_choice == "youtube":
+      choices.append("youtube")
+      break
+    elif player.choice == "quit":
+      print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
 
