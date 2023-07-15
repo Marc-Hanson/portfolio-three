@@ -8,8 +8,8 @@ def big_choice():
   Possible choices are 'B', 'C' and ending '1'.
   """
   while True:
-    print("\n----------------------------------------------------------------------")
-    print("\n You wake up and put on some clothes, grab a can of caffinated energy drink")
+    print("\n----------------------------------------------------------------------\n")
+    print("You wake up and put on some clothes, grab a can of caffinated energy drink")
     print("and sit infront of your computer screen, ready for another day of coding.")
     print("I mean, that's what you should be doing... That is what you're going to do?")
     print("\n It's probably time to start 'work', the hardest part is starting!")
@@ -43,8 +43,8 @@ def good_choice_one():
   Possible choices are 'E' and 'G'.
   """
   while True:
-    print("\n----------------------------------------------------------------------")
-    print("\n You're up and running! You load up for favorite IDE, find the bookmark")
+    print("\n----------------------------------------------------------------------\n")
+    print("You're up and running! You load up for favorite IDE, find the bookmark")
     print("for your latest online lesson and hit play. You take a sip of caffeine++ and")
     print("try to zone in on what's going on. Superclasses? Mixins!? Inheritance. What?")
     print("\n It's ok, you've got this. Check through 'slack' and see if there's any tips.")
@@ -69,8 +69,8 @@ def good_choice_two():
   Possible choices are 'I' and 'J'.
   """
   while True:
-    print("\n----------------------------------------------------------------------")
-    print("\n It a lot of work! But you're sticking with it. It doesn't make complete sense")
+    print("\n----------------------------------------------------------------------\n")
+    print("It a lot of work! But you're sticking with it. It doesn't make complete sense")
     print("but that's ok. You're starting to understand what Python can do even if you can't")
     print("write it alone or even recite what was on the previous page. For now, it's enough.")
     print("\n Maybe if you just grabbed a snack, some 'chocolate' maybe. It would all make sense.")
@@ -95,8 +95,8 @@ def good_choice_three():
   Possible choices are 'L' - The secret ending.
   """
   while True:
-    print("\n----------------------------------------------------------------------")
-    print("\n You've done it! You've worked hard and pushed through to get another day done.")
+    print("\n----------------------------------------------------------------------\n")
+    print("You've done it! You've worked hard and pushed through to get another day done.")
     print("Now the day is yours to enjoy, deep breath and relax those shoulders!")
     print("\n You've commited and pushed your code for the day and you're ahead of schedule!")
     print("You can close your terminal by typing 'quit' or guess the secret 'password'.")
@@ -117,8 +117,8 @@ def good_choice_end_one():
   Possible choices are endings '4' and '5'.
   """
   while True:
-    print("\n----------------------------------------------------------------------")
-    print("\n It's been a couple of hours now, you've watched a man making stone age tools")
+    print("\n----------------------------------------------------------------------\n")
+    print("It's been a couple of hours now, you've watched a man making stone age tools")
     print("using only his hands. You've seen an American couple convert a van in to a camper")
     print("van. And you've wathced several episodes of How It's Made...")
     print("\n None of this is getting work done! Are you just going to watch 'more' videos?")
@@ -126,13 +126,13 @@ def good_choice_end_one():
     player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
     player_choice = player_choice.lower()
     if player_choice == "more":
-      print("\n----------------------------------------------------------------------")
+      print("\n----------------------------------------------------------------------\n")
       print("Bonsai trimming masters. Bob Ross paintings. Theme park histories...")
       print("Rock climbing championships, backpacking videos, DIY aquariums and")
       print("Independent film making. You've wasted another day in a YouTube rabbit hole!")
       break
     elif player_choice == "bed":
-      print("\n----------------------------------------------------------------------")
+      print("\n----------------------------------------------------------------------\n")
       print("Safe and warm, an episode of Family Guy playing on your phone next to you.")
       print("You're not watching, just listening, until you drift off back to sleep.")
       print("Behind schedule and extra work to do tomorrow? Not todays problem!")
@@ -149,8 +149,8 @@ def good_choice_end_two():
   Possible choices are endings '9' and '10'.
   """
   while True:
-    print("\n----------------------------------------------------------------------")
-    print("\n Mmmm, chocolate. There's a jumbo bag of peanut M&Ms that's been waiting for")
+    print("\n----------------------------------------------------------------------\n")
+    print("Mmmm, chocolate. There's a jumbo bag of peanut M&Ms that's been waiting for")
     print("you, and today is the day! You rip open and the bag and just a couple turns to")
     print("a few more won't hurt. You look down and you've eaten more than half of a bag...")
     print("\n Well, it's less than one portion left so you might as well 'finish' them off!")
@@ -178,8 +178,8 @@ def secret_ending():
   Possible choices are endings '12', '13' and '15'.
   """
   while True:
-    print("\n----------------------------------------------------------------------")
-    print("\n The password was password!? You need to change that... Unbelievable.")
+    print("\n----------------------------------------------------------------------\n")
+    print("The password was password!? You need to change that... Unbelievable.")
     print("Apart from that, you're becoming a code master! Projects submitted and all of this")
     print("hard work is starting to pay off. You're having fun and making the most of things.")
     print("\n Maybe it's time for some 'music'.")
@@ -204,7 +204,7 @@ def secret_ending():
       break
     if player_choice == "hero":
       print("\n----------------------------------------------------------------------\n")
-      print("\n Your hard work has been noticed and you're noticed by top companies on LinkedIn")
+      print("Your hard work has been noticed and you're noticed by top companies on LinkedIn")
       print("Using your coding knowledge you've built apps that detect and help eliminate")
       print("almost every known disease to humankind. Oh, and you're like super rich. And")
       print("erm, lots of very attractive, funny, amazing people all want to marry you!")
@@ -223,7 +223,8 @@ def bad_choice_one():
   Possible choices are 'D' and 'F'.
   """
   while True:
-    print("\n\n\n You wake up and put on some clothes, grab a can of caffinated energy drink")
+    print("\n----------------------------------------------------------------------\n")
+    print("You wake up and put on some clothes, grab a can of caffinated energy drink")
     print("and sit infront of your computer screen, ready for another day of coding.")
     print("I mean, that's what you should be doing... Is is what you're going to do?")
     print("\nIt's probably time to start 'work', the hardest part is starting!")
