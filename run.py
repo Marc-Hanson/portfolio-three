@@ -1,6 +1,7 @@
-#Stores choices from user input, for fstring and path selection.
+# Stores choices from user input, for fstring and path selection.
 choices = []
 
+# Map of the project is included as an image in inside the Readme.
 def big_choice():
   """
   First set of choices, currently in 'A'.
@@ -59,6 +60,56 @@ def good_choice_one():
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
 
+
+def good_choice_two():
+  """
+  Good path, second choice. Currently in 'G'.
+  Possible choices are 'I' and 'J'.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------")
+    print("\n It a lot of work! But you're sticking with it. It doesn't make complete sense")
+    print("but that's ok. You're starting to understand what Python can do even if you can't")
+    print("write it alone or even recite what was on the previous page. For now, it's enough.")
+    print("\n Maybe if you just grabbed a snack, some 'chocolate' maybe. It would all make sense.")
+    print("Take another sip of your drink and play with the 'code' to figure out how it works.")
+    player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
+    player_choice = player_choice.lower()
+    if player_choice == "chocolate":
+      choices.append("chocolate")
+      break
+    elif player_choice == "code":
+      choices.append("code")
+      break
+    elif player.choice == "quit":
+      print("Game terminated. Thank you for playing.")
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+
+
+def good_choice_three():
+  """
+  Good path, third choice. Currently in 'I'.
+  Possible choices are 'L' - The secret ending.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------")
+    print("\n You've done it! You've worked hard and pushed through to get another day done.")
+    print("Now the day is yours to enjoy, deep breath and relax those shoulders!")
+    print("\n You've commited and pushed your code for the day and you're ahead of schedule!")
+    print("You can close your terminal by typing 'quit' or guess the secret 'password'.")
+    player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
+    player_choice = player_choice.lower()
+    if player_choice == "password":
+      choices.append("password")
+      break
+    elif player.choice == "quit":
+      print("Game terminated. Thank you for playing.")
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      
+
+# Main game function
 def main_game():
   """
   Main game functions, will run in order as the game progresses.
@@ -71,7 +122,7 @@ def main_game():
   else:
     print("ERROR MESSAGE. CHOICES NOT FOUND")
 
-#ASCII Art landing page, while loop which requires 'ready' to escape.
+# ASCII Art landing page, while loop which requires 'ready' to escape.
 print("""
                       ____|====|____
      _______________/                \_______________ 
