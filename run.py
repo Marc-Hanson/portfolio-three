@@ -2,11 +2,14 @@ def main_game():
   """
   Main game functions, will run in order as the game progresses.
   """
-  choice_one()
-  choice_two()
-  choice_three()
-  choice_four()
-  choice_five()
+  first_choice()
+  if "work" in choices: 
+    good_choice_one()
+  elif "game" in choices:
+    bad_choice_one()
+  else:
+    print("ERROR MESSAGE. CHOICES NOT FOUND")
+  
 
 #ASCII Art landing page, while loop which requires 'ready' to escape.
 print("""
