@@ -1,7 +1,7 @@
 # Stores choices from user input, for fstring and path selection.
 choices = []
 
-# Map of the project is included as an image in inside the Readme.
+# Map of the project is included as an image and inside the Readme.
 def big_choice():
   """
   First set of choices, currently in 'A'.
@@ -36,7 +36,7 @@ def big_choice():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-
+# 'Good' path first choice.
 def good_choice_one():
   """
   Good path, first choice. Currently in 'C'.
@@ -62,7 +62,7 @@ def good_choice_one():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords.")
-   
+# 'Good' path second choice.
 def good_choice_two():
   """
   Good path, second choice. Currently in 'G'.
@@ -88,7 +88,7 @@ def good_choice_two():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-
+# 'Good' path third choice.
 def good_choice_three():
   """
   Good path, third choice. Currently in 'I'.
@@ -110,7 +110,7 @@ def good_choice_three():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-      
+# 'Good' path first dead end terminal.
 def good_choice_end_one():
   """
   Good path, dead end terminal. Currently in 'E'.
@@ -142,7 +142,7 @@ def good_choice_end_one():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-
+# 'Good' path second dead end terminal.
 def good_choice_end_two():
   """
   Good path, dead end terminal. Currently in 'J'.
@@ -171,7 +171,7 @@ def good_choice_end_two():
       print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-
+# 'Good' path secret ending terminal.
 def secret_ending():
   """
   Good path, secret ending. Currently in 'L'.
@@ -216,7 +216,7 @@ def secret_ending():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
- 
+# 'Bad' path first choice.
 def bad_choice_one():
   """
   Bad path, first choice. currently in B.
