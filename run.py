@@ -269,6 +269,46 @@ def bad_choice_two():
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
 
+def bad_choice_three():
+  """
+  Bad path, first choice. currently in H.
+  Possible choices are 'K' and ending '8'.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------\n")
+    print("")
+    print("\n")
+    player_choice = input("\n")
+    player_choice = player_choice.lower()
+    if player_choice == "continue":
+      choices.append("continue")
+      break
+    elif player_choice == "lost":
+      print("")
+      break
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+
+def bad_choice_four():
+  """
+  Bad path, first choice. currently in H.
+  Possible choices are endings '11' and '14'.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------\n")
+    print("")
+    print("\n")
+    player_choice = input("\n")
+    player_choice = player_choice.lower()
+    if player_choice == "continue":
+      print("")
+      break
+    elif player_choice == "lost":
+      print("")
+      break
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+
 # Main game function.
 def main_game():
   """
