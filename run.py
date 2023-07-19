@@ -266,6 +266,8 @@ def bad_choice_two():
       print("Files downloading? This isn't good! You PC powers down and won't reboot.")
       print("It's not a cheap life lesson but it's an important one. Your game is over!")
       break
+    elif player_choice == "quit":
+      print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
 
@@ -293,6 +295,8 @@ def bad_choice_three():
       print("This is too good to pass up, you forget how hungry you are and are consumed only")
       print("by the dream of finally owning a next gen console. No more time to study!")
       break
+    elif player_choice == "quit":
+      print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
 
@@ -321,6 +325,42 @@ def bad_choice_four():
       print("don't get downhearted and you can try again tomorrow. It's not the perfect run")
       print("but you've put the work in! Good job.")
       break
+    elif player_choice == "quit":
+      print("Game terminated. Thank you for playing.")
+    else:
+      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+
+def bad_choice_end():
+  """
+  Bad path, dead end terminal. Currently in 'D'.
+  Possible choices are endings '2', '3' and '6'.
+  """
+  while True:
+    print("\n----------------------------------------------------------------------")
+    print("\n It's been two hours of dying in a dungeon, with the same angry group of")
+    print("kids. They've insulted your mom, your pc, your dog, your voice. It's all your")
+    print("fault, apparently...")
+    print("\n Do you unleash your inner 'demon' and rage at these nerds? Can you keep your")
+    print("cool and 'clear' the last boss? Or just 'ragequit' out and leave them to it?")
+    player_choice = input("I mean there are no right answers are there, what do you think?\n")
+    player_choice = player_choice.lower()
+    if player_choice == "demon":
+      print("CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU")
+      print("KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR")
+      print("INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!")
+      break
+    elif player_choice == "clear":
+      print("You hide the chat window and keep doing what you're doing. It takes a while and")
+      print("a couple more attempts but you get the dungeon finished. Your quests are done!")
+      print("Success. Wait, it's getting dark and we didn't study!?")
+      break
+    elif player_choice == "ragequit":
+      print("You close the game, throw your headset on the keyboard and stare in to the middle")
+      print("distance. Energy levels depleted and filled with a fresh hatred for anybody and")
+      print("everybody. Maybe online gaming just isn't for you, other people just make you angry.")
+      break
+    elif player_choice == "quit":
+      print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
 
