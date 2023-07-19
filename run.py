@@ -33,7 +33,6 @@ def big_choice():
       print("Bliss! Well, until you reach for for your trusty energy drink...")
       print("Which is lying on it's side, it's contents emptied all over your keyboard.")
       print("Wow... The day is over before it began. Back to bed?")
-      break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
 
@@ -130,13 +129,11 @@ def good_choice_end_one():
       print("Bonsai trimming masters. Bob Ross paintings. Theme park histories...")
       print("Rock climbing championships, backpacking videos, DIY aquariums and")
       print("Independent film making. You've wasted another day in a YouTube rabbit hole!")
-      break
     elif player_choice == "bed":
       print("\n----------------------------------------------------------------------")
       print("Safe and warm, an episode of Family Guy playing on your phone next to you.")
       print("You're not watching, just listening, until you drift off back to sleep.")
       print("Behind schedule and extra work to do tomorrow? Not todays problem!")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
       break
@@ -161,12 +158,10 @@ def good_choice_end_two():
       print("WHAT SORT OF IDEA WAS THIS!? You were already full, now you can barely move!")
       print("You sit there with less than half a milkshake and a few M&Ms left over, but,")
       print("we both know you're not going to stop there. You enter a food coma and die.")
-      break
     elif player_choice == "finish":
       print("TOO... MUCH... CHOCOLATE! It got out of hand and now you feel too sick to study.")
       print("What a day... You can go out later and buy a new bag to replace the one you've")
       print("devoured today. What are the chances this will happen again tomorrow?")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -195,13 +190,11 @@ def secret_ending():
       print("Never gonna make you cry")
       print("Never gonna say goodbye")
       print("Never gonna tell a lie and hurt you!")
-      break
     if player_choice == "joke":
       print("\n----------------------------------------------------------------------\n")
       print("Why is Voldemort so good with computers?")
       print("...")
       print("He's fluent in Python (worth it, right?)")
-      break
     if player_choice == "hero":
       print("\n----------------------------------------------------------------------\n")
       print("\n Your hard work has been noticed and you're noticed by top companies on LinkedIn")
@@ -210,7 +203,6 @@ def secret_ending():
       print("erm, lots of very attractive, funny, amazing people all want to marry you!")
       print(f"\n All because you decided to {choices[0]}, use {choices[1]} and write pro {choices[2]}.")
       print("Excellent work, you're a god among coders <3")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
       break
@@ -229,7 +221,7 @@ def bad_choice_one():
     print("get so many quests done in one quick run. ")
     print("\n Let's go, finish 'fast' and get back to studying! Or 'close' the game and")
     print("focus up. You've delayed things enough.")
-    player_choice = input("It's your choice thoough... I'm just a text interface.\n")
+    player_choice = input("It's your choice though... I'm just a text interface.\n")
     player_choice = player_choice.lower()
     if player_choice == "fast":
       choices.append("fast")
@@ -265,7 +257,6 @@ def bad_choice_two():
       print("mouse has stopped working. Ctrl+Alt+Del... nope. Alt+F4... nope. ESC ESC!")
       print("Files downloading? This isn't good! You PC powers down and won't reboot.")
       print("It's not a cheap life lesson but it's an important one. Your game is over!")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -294,7 +285,6 @@ def bad_choice_three():
       print("an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!")
       print("This is too good to pass up, you forget how hungry you are and are consumed only")
       print("by the dream of finally owning a next gen console. No more time to study!")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -319,12 +309,10 @@ def bad_choice_four():
       print("You're in and writing! It's not fast and it's not flashy but it's progress!")
       print("It's a marathon not a sprint and you're still here at the finish line. Great")
       print("effort! Another day you've made a step in the right direction.")
-      break
     elif player_choice == "face":
       print("We've all been there, it's just not your day. Take a break, grab a cup of tea,")
       print("don't get downhearted and you can try again tomorrow. It's not the perfect run")
       print("but you've put the work in! Good job.")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -348,17 +336,14 @@ def bad_choice_end():
       print("CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU")
       print("KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR")
       print("INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!")
-      break
     elif player_choice == "clear":
       print("You hide the chat window and keep doing what you're doing. It takes a while and")
       print("a couple more attempts but you get the dungeon finished. Your quests are done!")
       print("Success. Wait, it's getting dark and we didn't study!?")
-      break
     elif player_choice == "ragequit":
       print("You close the game, throw your headset on the keyboard and stare in to the middle")
       print("distance. Energy levels depleted and filled with a fresh hatred for anybody and")
       print("everybody. Maybe online gaming just isn't for you, other people just make you angry.")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -420,8 +405,10 @@ while True:
   if game_start == "ready":
     break
   elif game_start =="quit":
+    print("\n----------------------------------------------------------------------\n")
     print("Not now... You didn't even start playing! Do you think that's funny?")
   else:
+    print("\n----------------------------------------------------------------------\n")
     print("That's ok, we can wait until you're 'ready'...\n")
     
 main_game()
