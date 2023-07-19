@@ -282,7 +282,7 @@ def bad_choice_three():
     print("\n There's nothing that catches your eye, just a quick run to the local 'shop'")
     print("to pick up some treats. Make something with what you already have at 'home', you")
     print("need to get to work!")
-    player_choice = input("\n Make a something with food you have at home or go out shopping?")
+    player_choice = input("Make a something with food you have at home or go out shopping? \n")
     player_choice = player_choice.lower()
     if player_choice == "home":
       choices.append("home")
@@ -303,15 +303,23 @@ def bad_choice_four():
   """
   while True:
     print("\n----------------------------------------------------------------------\n")
-    print("")
-    print("\n")
-    player_choice = input("\n")
+    print("You've finished your drink, ate your food, been distracted and came though it")
+    print("all and you're still here. It's not always easy but you should be rewarded for")
+    print("your efforts!")
+    print("\n Open up your 'IDE' and get to work, the day is wasting away. Let's get")
+    print("something written. It doesn't have to be world changing but every little step")
+    print("is progress. Kind of a 'face' down on the keyboard and cry kind of day?")
+    player_choice = input("You're so close... Write something, anything!\n")
     player_choice = player_choice.lower()
-    if player_choice == "continue":
-      print("")
+    if player_choice == "ide":
+      print("You're in and writing! It's not fast and it's not flashy but it's progress!")
+      print("It's a marathon not a sprint and you're still here at the finish line. Great")
+      print("effort! Another day you've made a step in the right direction.")
       break
-    elif player_choice == "lost":
-      print("")
+    elif player_choice == "face":
+      print("We've all been there, it's just not your day. Take a break, grab a cup of tea,")
+      print("don't get downhearted and you can try again tomorrow. It's not the perfect run")
+      print("but you've put the work in! Good job.")
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
@@ -328,12 +336,20 @@ def main_game():
       good_choice_two()
       if "code" in choices:
         good_choice_three()
-      elif "chocolate" in choices:
+      else:
         good_choice_end_two()
-    elif "youtube" in choices:
+    else:
       good_choice_end_one()
-  elif "game" in choices:
+  else:
     bad_choice_one()
+    if "close" in choices:
+      bad_choice_two()
+      if "regular" in choices:
+        bad_choice_three()
+        if "home" in choices:
+          bad_choice_four()
+    else:
+      bad_choice_end()
   if "work" and "slack" and "code" in choices:
     secret_ending()
 
