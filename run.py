@@ -228,7 +228,7 @@ def bad_choice_one():
     print("auctions and somebody is starting a group for that dungeon you need! You can")
     print("get so many quests done in one quick run. ")
     print("\n Let's go, finish 'fast' and get back to studying! Or 'close' the game and")
-    print("'focus' up. You've delayed things enough.")
+    print("focus up. You've delayed things enough.")
     player_choice = input("It's your choice thoough... I'm just a text interface.\n")
     player_choice = player_choice.lower()
     if player_choice == "fast":
@@ -276,15 +276,22 @@ def bad_choice_three():
   """
   while True:
     print("\n----------------------------------------------------------------------\n")
-    print("")
-    print("\n")
-    player_choice = input("\n")
+    print("Still struggling to start, but you're still trying your best! I mean, how many")
+    print("more distractions could there possible be? It's hard to concentrate on an empty")
+    print("stomach. Your stomach grumbles away, and you go to the kitchen to check for food.")
+    print("\n There's nothing that catches your eye, just a quick run to the local 'shop'")
+    print("to pick up some treats. Make something with what you already have at 'home', you")
+    print("need to get to work!")
+    player_choice = input("\n Make a something with food you have at home or go out shopping?")
     player_choice = player_choice.lower()
-    if player_choice == "continue":
-      choices.append("continue")
+    if player_choice == "home":
+      choices.append("home")
       break
-    elif player_choice == "lost":
-      print("")
+    elif player_choice == "shop":
+      print("You put on some shoes and head out to the shops, on your walk there you notice")
+      print("an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!")
+      print("This is too good to pass up, you forget how hungry you are and are consumed only")
+      print("by the dream of finally owning a next gen console. No more time to study!")
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
