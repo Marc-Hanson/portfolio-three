@@ -35,7 +35,6 @@ def big_choice():
       print("Wow... The day is over before it began. Back to bed?")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
 
 def good_choice_one():
   """
@@ -62,7 +61,6 @@ def good_choice_one():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords.")
-    break
    
 def good_choice_two():
   """
@@ -89,7 +87,6 @@ def good_choice_two():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
 
 def good_choice_three():
   """
@@ -112,7 +109,6 @@ def good_choice_three():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
       
 def good_choice_end_one():
   """
@@ -145,7 +141,6 @@ def good_choice_end_one():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
 
 def good_choice_end_two():
   """
@@ -175,7 +170,6 @@ def good_choice_end_two():
       print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
 
 def secret_ending():
   """
@@ -221,7 +215,6 @@ def secret_ending():
       break
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
  
 def bad_choice_one():
   """
@@ -276,7 +269,6 @@ def bad_choice_two():
       print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
 
 def bad_choice_three():
   """
@@ -306,7 +298,6 @@ def bad_choice_three():
       print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
 
 def bad_choice_four():
   """
@@ -337,7 +328,6 @@ def bad_choice_four():
       print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
 
 def bad_choice_end():
   """
@@ -372,7 +362,6 @@ def bad_choice_end():
       print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered '{player_choice}', please enter one of the given keywords." )
-    break
 
 # Main game function.
 def main_game():
@@ -402,7 +391,7 @@ def main_game():
       bad_choice_end()
   if "work" and "slack" and "code" in choices:
     secret_ending()
-break
+
 # ASCII Art landing page, while loop which requires 'ready' to escape.
 print("""
                       ____|====|____
