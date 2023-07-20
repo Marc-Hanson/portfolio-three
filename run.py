@@ -1,7 +1,9 @@
 # Import statements.
+import colorama
 from colorama import init as colorama_init
 from colorama import Fore
 from colorama import Style
+colorama_init(autoreset=True)
 
 # Stores choices from user input, for fstring and path selection.
 choices = []
@@ -426,5 +428,4 @@ while True:
   else:
     print(f"That's ok, we can wait until you're {Fore.GREEN}'ready'{Style.RESET_ALL}...\n")
     
-colorama_init()
 main_game()
