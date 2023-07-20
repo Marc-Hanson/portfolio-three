@@ -1,3 +1,8 @@
+# Import statements.
+from colorama import init as colorama_init
+from colorama import Fore
+from colorama import Style
+
 # Stores choices from user input, for fstring and path selection.
 choices = []
 
@@ -12,9 +17,9 @@ def big_choice():
     print("\n You wake up and put on some clothes, grab a can of caffinated energy drink")
     print("and sit infront of your computer screen, ready for another day of coding.")
     print("I mean, that's what you should be doing... That is what you're going to do?")
-    print("\n It's probably time to start 'work', the hardest part is starting!")
-    print("Just one quick 'game'? I mean, you have got ALL day to study...")
-    print("Feet up, music on and finish your 'drink'. You need that caffeine.")
+    print(f"\n It's probably time to start {Fore.GREEN}'work'{Style.RESET_ALL}, the hardest part is starting!")
+    print(f"Just one quick {Fore.GREEN}'game'{Style.RESET_ALL}? I mean, you have got ALL day to study...")
+    print(f"Feet up, music on and finish your {Fore.GREEN}'drink'{Style.RESET_ALL}. You need that caffeine.")
     player_choice = input("Urgh... Mornings are the worst. What are you going to do?\n")
     player_choice = player_choice.lower()
     if player_choice == "work":
@@ -33,8 +38,9 @@ def big_choice():
       print("Bliss! Well, until you reach for for your trusty energy drink...")
       print("Which is lying on it's side, it's contents emptied all over your keyboard.")
       print("Wow... The day is over before it began. Back to bed?")
+      break
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 def good_choice_one():
   """
@@ -46,8 +52,8 @@ def good_choice_one():
     print("\n You're up and running! You load up for favorite IDE, find the bookmark")
     print("for your latest online lesson and hit play. You take a sip of caffeine++ and")
     print("try to zone in on what's going on. Superclasses? Mixins!? Inheritance. What?")
-    print("\n It's ok, you've got this. Check through 'slack' and see if there's any tips.")
-    print("Or open 'youtube' and come back to it in a little bit, it's too early for this.")
+    print(f"\n It's ok, you've got this. Check through {Fore.GREEN}'slack'{Style.RESET_ALL} and see if there's any tips.")
+    print(f"Or open {Fore.GREEN}'youtube'{Style.RESET_ALL} and come back to it in a little bit, it's too early for this.")
     player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
     player_choice = player_choice.lower()
     if player_choice == "slack":
@@ -60,7 +66,7 @@ def good_choice_one():
       print("Game terminated. Thank you for playing.")
       break
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords.")
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
    
 def good_choice_two():
   """
@@ -72,8 +78,8 @@ def good_choice_two():
     print("\n It a lot of work! But you're sticking with it. It doesn't make complete sense")
     print("but that's ok. You're starting to understand what Python can do even if you can't")
     print("write it alone or even recite what was on the previous page. For now, it's enough.")
-    print("\n Maybe if you just grabbed a snack, some 'chocolate' maybe. It would all make sense.")
-    print("Take another sip of your drink and play with the 'code' to figure out how it works.")
+    print(f"\n Maybe if you just grabbed a snack, some {Fore.GREEN}'chocolate'{Style.RESET_ALL} maybe. It would all make sense.")
+    print(f"Take another sip of your drink and play with the {Fore.GREEN}'code'{Style.RESET_ALL} to figure out how it works.")
     player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
     player_choice = player_choice.lower()
     if player_choice == "chocolate":
@@ -86,7 +92,7 @@ def good_choice_two():
       print("Game terminated. Thank you for playing.")
       break
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 def good_choice_three():
   """
@@ -98,7 +104,7 @@ def good_choice_three():
     print("\n You've done it! You've worked hard and pushed through to get another day done.")
     print("Now the day is yours to enjoy, deep breath and relax those shoulders!")
     print("\n You've commited and pushed your code for the day and you're ahead of schedule!")
-    print("You can close your terminal by typing 'quit' or guess the secret 'password'.")
+    print(f"You can close your terminal by typing {Fore.GREEN}'quit'{Style.RESET_ALL} or guess the secret {Fore.GREEN}'password'{Style.RESET_ALL}.")
     player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
     player_choice = player_choice.lower()
     if player_choice == "password":
@@ -108,7 +114,7 @@ def good_choice_three():
       print("Game terminated. Thank you for playing.")
       break
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
       
 def good_choice_end_one():
   """
@@ -129,18 +135,15 @@ def good_choice_end_one():
       print("Bonsai trimming masters. Bob Ross paintings. Theme park histories...")
       print("Rock climbing championships, backpacking videos, DIY aquariums and")
       print("Independent film making. You've wasted another day in a YouTube rabbit hole!")
-      break
     elif player_choice == "bed":
       print("\n----------------------------------------------------------------------")
       print("Safe and warm, an episode of Family Guy playing on your phone next to you.")
       print("You're not watching, just listening, until you drift off back to sleep.")
-      print("Behind schedule and extra work to do tomorrow? Not todays problem!")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
       break
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 def good_choice_end_two():
   """
@@ -160,16 +163,14 @@ def good_choice_end_two():
       print("WHAT SORT OF IDEA WAS THIS!? You were already full, now you can barely move!")
       print("You sit there with less than half a milkshake and a few M&Ms left over, but,")
       print("we both know you're not going to stop there. You enter a food coma and die.")
-      break
     elif player_choice == "finish":
       print("TOO... MUCH... CHOCOLATE! It got out of hand and now you feel too sick to study.")
       print("What a day... You can go out later and buy a new bag to replace the one you've")
       print("devoured today. What are the chances this will happen again tomorrow?")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 def secret_ending():
   """
@@ -181,9 +182,9 @@ def secret_ending():
     print("\n The password was password!? You need to change that... Unbelievable.")
     print("Apart from that, you're becoming a code master! Projects submitted and all of this")
     print("hard work is starting to pay off. You're having fun and making the most of things.")
-    print("\n Maybe it's time for some 'music'.")
-    print("Or a terrible 'joke'?")
-    print("Or are you just here for the 'hero' ending? Typical...")
+    print(f"\n Maybe it's time for some {Fore.GREEN}'music'{Style.RESET_ALL}.")
+    print(f"Or a terrible {Fore.GREEN}'joke'{Style.RESET_ALL}?")
+    print(f"Or are you just here for the {Fore.GREEN}'hero'{Style.RESET_ALL} ending? Typical...")
     player_choice = input("\n")
     player_choice = player_choice.lower()
     if player_choice == "music":
@@ -209,12 +210,12 @@ def secret_ending():
       print("erm, lots of very attractive, funny, amazing people all want to marry you!")
       print(f"\n All because you decided to {choices[0]}, use {choices[1]} and write pro {choices[2]}.")
       print("Excellent work, you're a god among coders <3")
-      berak
+      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
       break
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
  
 def bad_choice_one():
   """
@@ -226,7 +227,7 @@ def bad_choice_one():
     print("Just one one lttle game right? You boot up World of Warcraft to check your")
     print("auctions and somebody is starting a group for that dungeon you need! You can")
     print("get so many quests done in one quick run. ")
-    print("\n Let's go, finish 'fast' and get back to studying! Or 'close' the game and")
+    print(f"\n Let's go, finish {Fore.GREEN}'fast'{Style.RESET_ALL} and get back to studying! Or {Fore.GREEN}'close'{Style.RESET_ALL} the game and")
     print("focus up. You've delayed things enough.")
     player_choice = input("It's your choice though... I'm just a text interface.\n")
     player_choice = player_choice.lower()
@@ -239,7 +240,7 @@ def bad_choice_one():
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 def bad_choice_two():
   """
@@ -252,8 +253,8 @@ def bad_choice_two():
     print("You open up your emails to clear out all the spam and see if there are any")
     print("updates from your course provider.")
     print("\n You've won an air fryer! It's not a competition you remember entering but")
-    print("it IS a free air fryer. Let's 'claim' it! Or delete it and just go back to a")
-    print("'regular' non air frying lifestlye.")
+    print(f"it IS a free air fryer. Let's {Fore.GREEN}'claim'{Style.RESET_ALL} it! Or delete it and just go back to a")
+    print(f"{Fore.GREEN}'regular'{Style.RESET_ALL} non air frying lifestlye.")
     player_choice = input("Can you resist that perfectly cooked crispy goodness?\n")
     player_choice = player_choice.lower()
     if player_choice == "regular":
@@ -268,7 +269,7 @@ def bad_choice_two():
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 def bad_choice_three():
   """
@@ -280,8 +281,8 @@ def bad_choice_three():
     print("Still struggling to start, but you're still trying your best! I mean, how many")
     print("more distractions could there possible be? It's hard to concentrate on an empty")
     print("stomach. Your stomach grumbles away, and you go to the kitchen to check for food.")
-    print("\n There's nothing that catches your eye, just a quick run to the local 'shop'")
-    print("to pick up some treats. Make something with what you already have at 'home', you")
+    print(f"\n There's nothing that catches your eye, just a quick run to the local {Fore.GREEN}'shop'{Style.RESET_ALL}")
+    print(f"to pick up some treats. Make something with what you already have at {Fore.GREEN}'home'{Style.RESET_ALL}, you")
     print("need to get to work!")
     player_choice = input("Make a something with food you have at home or go out shopping? \n")
     player_choice = player_choice.lower()
@@ -297,7 +298,7 @@ def bad_choice_three():
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 def bad_choice_four():
   """
@@ -309,9 +310,9 @@ def bad_choice_four():
     print("You've finished your drink, ate your food, been distracted and came though it")
     print("all and you're still here. It's not always easy but you should be rewarded for")
     print("your efforts!")
-    print("\n Open up your 'IDE' and get to work, the day is wasting away. Let's get")
+    print(f"\n Open up your {Fore.GREEN}'IDE'{Style.RESET_ALL} and get to work, the day is wasting away. Let's get")
     print("something written. It doesn't have to be world changing but every little step")
-    print("is progress. Kind of a 'face' down on the keyboard and cry kind of day?")
+    print(f"is progress. Kind of a {Fore.GREEN}'face'{Style.RESET_ALL} down on the keyboard and cry kind of day?")
     player_choice = input("You're so close... Write something, anything!\n")
     player_choice = player_choice.lower()
     if player_choice == "ide":
@@ -327,7 +328,7 @@ def bad_choice_four():
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 def bad_choice_end():
   """
@@ -339,8 +340,8 @@ def bad_choice_end():
     print("\n It's been two hours of dying in a dungeon, with the same angry group of")
     print("kids. They've insulted your mom, your pc, your dog, your voice. It's all your")
     print("fault, apparently...")
-    print("\n Do you unleash your inner 'demon' and rage at these nerds? Can you keep your")
-    print("cool and 'clear' the last boss? Or just 'ragequit' out and leave them to it?")
+    print(f"\n Do you unleash your inner {Fore.GREEN}'demon'{Style.RESET_ALL} and rage at these nerds? Can you keep your")
+    print(f"cool and {Fore.GREEN}'clear'{Style.RESET_ALL} the last boss? Or just {Fore.GREEN}'ragequit'{Style.RESET_ALL} out and leave them to it?")
     player_choice = input("I mean there are no right answers are there, what do you think?\n")
     player_choice = player_choice.lower()
     if player_choice == "demon":
@@ -361,7 +362,7 @@ def bad_choice_end():
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
-      print(f"You entered '{player_choice}', please enter one of the given keywords." )
+      print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
 # Main game function.
 def main_game():
@@ -375,11 +376,13 @@ def main_game():
       good_choice_two()
       if "code" in choices:
         good_choice_three()
+        if "work" and "slack" and "code" in choices:
+           secret_ending()
       else:
         good_choice_end_two()
     else:
       good_choice_end_one()
-  else:
+  elif "game" in choices:
     bad_choice_one()
     if "close" in choices:
       bad_choice_two()
@@ -389,8 +392,6 @@ def main_game():
           bad_choice_four()
     else:
       bad_choice_end()
-  if "work" and "slack" and "code" in choices:
-    secret_ending()
 
 # ASCII Art landing page, while loop which requires 'ready' to escape.
 print("""
@@ -411,18 +412,19 @@ print("""
 """)
 print("Welcome to 'A day in the life', A text based adventure through")
 print("the life of a student. All you need to do is type out the")
-print("'keyword' highlighted in quotes to progress through the day.")
-print("You can also type 'quit' at any time to leave the game.")
+print(f"{Fore.GREEN}'keyword'{Style.RESET_ALL} highlighted in quotes to progress through the day.")
+print(f"You can also type {Fore.GREEN}'quit'{Style.RESET_ALL} at any time to leave the game.")
 while True:
-  game_start = input("\nAre you 'ready' to wake up in the life of a coding student?\n")
+  game_start = input(f"\nAre you {Fore.GREEN}'ready'{Style.RESET_ALL} to wake up in the life of a coding student?\n")
   game_start = game_start.lower()
   if game_start == "ready":
     break
-  elif game_start =="quit":
-    print("\n----------------------------------------------------------------------\n")
+  elif game_start == "quit":
     print("Not now... You didn't even start playing! Do you think that's funny?")
+  elif game_start == "keyword":
+    print("Yes... that is a keyword. But it's not the right one, try again.")
   else:
-    print("\n----------------------------------------------------------------------\n")
-    print("That's ok, we can wait until you're 'ready'...\n")
+    print(f"That's ok, we can wait until you're {Fore.GREEN}'ready'{Style.RESET_ALL}...\n")
     
+colorama_init()
 main_game()
