@@ -49,6 +49,8 @@ def big_choice():
         break
     else:
       print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
+      
+# Good day functions.
 
 def good_choice_one():
   """
@@ -123,7 +125,9 @@ def good_choice_three():
       break
     else:
       print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
-      
+
+# Good day end nodes.
+
 def good_choice_end_one():
   """
   Good path, dead end terminal. Currently in 'E'.
@@ -209,6 +213,8 @@ def good_choice_end_two():
     else:
       print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
+# Good day perfect ending.
+
 def secret_ending():
   """
   Good path, secret ending. Currently in 'L'.
@@ -217,8 +223,8 @@ def secret_ending():
   while True:
     print("\n----------------------------------------------------------------------")
     print("\n The password was password!? You need to change that... Unbelievable.")
-    print("Apart from that, you're becoming a code master! Projects submitted and all of this")
-    print("hard work is starting to pay off. You're having fun and making the most of things.")
+    print("Apart from that, you're becoming a code master! Projects submitted and your")
+    print("hard work is starting to pay off. You're having fun and killing it.")
     print(f"\n Maybe it's time for some {Fore.GREEN}'music'{Style.RESET_ALL}.")
     print(f"Or a terrible {Fore.GREEN}'joke'{Style.RESET_ALL}?")
     print(f"Or are you just here for the {Fore.GREEN}'hero'{Style.RESET_ALL} ending? Typical...")
@@ -253,7 +259,10 @@ def secret_ending():
       break
     else:
       print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
- 
+    break
+
+# Bad day functions.
+
 def bad_choice_one():
   """
   Bad path, first choice. currently in B.
@@ -323,7 +332,7 @@ def bad_choice_three():
     print("\n----------------------------------------------------------------------\n")
     print("Still struggling to start, but you're still trying your best! I mean, how many")
     print("more distractions could there possible be? It's hard to concentrate on an empty")
-    print("stomach. Your stomach grumbles away, and you go to the kitchen to check for food.")
+    print("stomach. Your stomach grumbles away, you go to the kitchen to check for food.")
     print(f"\n There's nothing that catches your eye, just a quick run to the local {Fore.GREEN}'shop'{Style.RESET_ALL}")
     print(f"to pick up some treats. Make something with what you already have at {Fore.GREEN}'home'{Style.RESET_ALL}, you")
     print("need to get to work!")
@@ -368,14 +377,19 @@ def bad_choice_four():
       print("You're in and writing! It's not fast and it's not flashy but it's progress!")
       print("It's a marathon not a sprint and you're still here at the finish line. Great")
       print("effort! Another day you've made a step in the right direction.")
+      break
     elif player_choice == "face":
       print("We've all been there, it's just not your day. Take a break, grab a cup of tea,")
       print("don't get downhearted and you can try again tomorrow. It's not the perfect run")
       print("but you've put the work in! Good job.")
+      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
       print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
+    break
+
+# Bad day perfect end.
 
 def bad_choice_end():
   """
@@ -392,6 +406,7 @@ def bad_choice_end():
     player_choice = input("I mean there are no right answers are there, what do you think?\n")
     player_choice = player_choice.lower()
     if player_choice == "demon":
+      print("\n----------------------------------------------------------------------")
       print("CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU")
       print("KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR")
       print("INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!")
@@ -403,6 +418,7 @@ def bad_choice_end():
       else:
         break
     elif player_choice == "clear":
+      print("\n----------------------------------------------------------------------")
       print("You hide the chat window and keep doing what you're doing. It takes a while and")
       print("a couple more attempts but you get the dungeon finished. Your quests are done!")
       print("Success. Wait, it's getting dark and we didn't study!?")
@@ -414,6 +430,7 @@ def bad_choice_end():
       else:
         break
     elif player_choice == "ragequit":
+      print("\n----------------------------------------------------------------------")
       print("You close the game, throw your headset on the keyboard and stare in to the middle")
       print("distance. Energy levels depleted and filled with a fresh hatred for anybody and")
       print("everybody. Maybe online gaming just isn't for you, other people just make you angry.")
