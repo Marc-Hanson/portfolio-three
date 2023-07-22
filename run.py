@@ -40,7 +40,13 @@ def big_choice():
       print("Bliss! Well, until you reach for for your trusty energy drink...")
       print("Which is lying on it's side, it's contents emptied all over your keyboard.")
       print("Wow... The day is over before it began. Back to bed?")
-      break
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     else:
       print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords." )
 
@@ -78,10 +84,10 @@ def good_choice_two():
   while True:
     print("\n----------------------------------------------------------------------")
     print("\n It a lot of work! But you're sticking with it. It doesn't make complete sense")
-    print("but that's ok. You're starting to understand what Python can do even if you can't")
-    print("write it alone or even recite what was on the previous page. For now, it's enough.")
-    print(f"\n Maybe if you just grabbed a snack, some {Fore.GREEN}'chocolate'{Style.RESET_ALL} maybe. It would all make sense.")
-    print(f"Take another sip of your drink and play with the {Fore.GREEN}'code'{Style.RESET_ALL} to figure out how it works.")
+    print("but that's ok. You're starting to understand what you can do even if you can't")
+    print("write it alone or even recite what was on the previous page. But it's enough.")
+    print(f"\n Maybe if you grabbed a snack, some {Fore.GREEN}'chocolate'{Style.RESET_ALL}? It would all make sense.")
+    print(f"Take a sip of your drink and play with the {Fore.GREEN}'code'{Style.RESET_ALL} to figure out how it works.")
     player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
     player_choice = player_choice.lower()
     if player_choice == "chocolate":
@@ -137,10 +143,25 @@ def good_choice_end_one():
       print("Bonsai trimming masters. Bob Ross paintings. Theme park histories...")
       print("Rock climbing championships, backpacking videos, DIY aquariums and")
       print("Independent film making. You've wasted another day in a YouTube rabbit hole!")
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "bed":
       print("\n----------------------------------------------------------------------")
       print("Safe and warm, an episode of Family Guy playing on your phone next to you.")
       print("You're not watching, just listening, until you drift off back to sleep.")
+      print("There will always be other days to study. Naps are priceless.")
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
       break
@@ -165,10 +186,24 @@ def good_choice_end_two():
       print("WHAT SORT OF IDEA WAS THIS!? You were already full, now you can barely move!")
       print("You sit there with less than half a milkshake and a few M&Ms left over, but,")
       print("we both know you're not going to stop there. You enter a food coma and die.")
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "finish":
       print("TOO... MUCH... CHOCOLATE! It got out of hand and now you feel too sick to study.")
       print("What a day... You can go out later and buy a new bag to replace the one you've")
       print("devoured today. What are the chances this will happen again tomorrow?")
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -267,7 +302,13 @@ def bad_choice_two():
       print("mouse has stopped working. Ctrl+Alt+Del... nope. Alt+F4... nope. ESC ESC!")
       print("Files downloading? This isn't good! You PC powers down and won't reboot.")
       print("It's not a cheap life lesson but it's an important one. Your game is over!")
-      break
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -296,7 +337,13 @@ def bad_choice_three():
       print("an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!")
       print("This is too good to pass up, you forget how hungry you are and are consumed only")
       print("by the dream of finally owning a next gen console. No more time to study!")
-      break
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -321,12 +368,10 @@ def bad_choice_four():
       print("You're in and writing! It's not fast and it's not flashy but it's progress!")
       print("It's a marathon not a sprint and you're still here at the finish line. Great")
       print("effort! Another day you've made a step in the right direction.")
-      break
     elif player_choice == "face":
       print("We've all been there, it's just not your day. Take a break, grab a cup of tea,")
       print("don't get downhearted and you can try again tomorrow. It's not the perfect run")
       print("but you've put the work in! Good job.")
-      break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
@@ -350,17 +395,35 @@ def bad_choice_end():
       print("CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU")
       print("KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR")
       print("INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!")
-      break
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "clear":
       print("You hide the chat window and keep doing what you're doing. It takes a while and")
       print("a couple more attempts but you get the dungeon finished. Your quests are done!")
       print("Success. Wait, it's getting dark and we didn't study!?")
-      break
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "ragequit":
       print("You close the game, throw your headset on the keyboard and stare in to the middle")
       print("distance. Energy levels depleted and filled with a fresh hatred for anybody and")
       print("everybody. Maybe online gaming just isn't for you, other people just make you angry.")
-      break
+      end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+      end_game = end_game.lower()
+      if end_game == "yes":
+        print("\n----------------------------------------------------------------------\n")
+        main_game()
+      else:
+        break
     elif player_choice == "quit":
       print("Game terminated. Thank you for playing.")
     else:
