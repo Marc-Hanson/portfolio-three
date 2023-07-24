@@ -1,32 +1,55 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# A Day In The Life
 
-Welcome,
+## A day in the life is a text adventure which allows the player to experience a day in the life of a full stack software development student. It has two main forks following a good day or a bad day, both of which have successful and unsuccessful endings. The user is given select keywords to progress to the next node which are highlighted in green.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+#### Live Site [Here](https://a-day-in-the-life-ae933bba8572.herokuapp.com/)
 
-## Reminders
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+#### How to play
+- To begin playing the user must type the 'ready' keyword.
+- You can quit at any time using the 'quit' keyword.
+- After entering a keyword you progress to the next node, or reach a dead end.
+- After reaching a successful or unsuccessful ending you are asked if you would like to try again.
 
-## Creating the Heroku app
+## Features
+- Upon running the game you are greeted with a picture of a keyboard and screen is ASCII art format. 
+![alt text](assets/readme/ascii.jpg)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+- All 3 options are working answers and have small custom messages, and once 'ready' is entered the game will begin. Other responses will give the user feeedback to provide a different answer.
+![alt text](assets/readme/ready.jpg)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+- Once 'ready' is entered the game will begin and the story starts.
+![alt text](assets/readme/game_started.jpg)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+- All inputs are checked and feedback is given to the player incase of mistakes. 
+![alt text](assets/readme/wrong.jpg)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+- All notes and comments in the run.py file follow the projects map which is provided in both the assets file as well as below.
+![alt text](assets/readme/the_map.jpg)
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
+## Technologies used
+- Language
+Python
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Frameworks, Deployement & Libraries
 
----
+* [Github](https://github.com/)
 
-Happy coding!
+* [CodeAnywhere](https://app.codeanywhere.com/)
+
+## Testing
+
+## Accessibility
+
+## Issues and bugs
+
+## Fixed bugs
+
+## Validator Testing
+
+## Deployment
+
+## Credits
+
+## Special Thanks

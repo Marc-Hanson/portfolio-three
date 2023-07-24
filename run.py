@@ -213,6 +213,7 @@ def good_choice_end_two():
     player_choice = input("Don't do it! You're still young and have so much to live for!\n")
     player_choice = player_choice.lower()
     if player_choice == "milkshake":
+      print("\n----------------------------------------------------------------------")
       print("WHAT SORT OF IDEA WAS THIS!? You were already full, now you can barely move!")
       print("You sit there with less than half a milkshake and a few M&Ms left over, but,")
       print("we both know you're not going to stop there. You enter a food coma and die.")
@@ -231,6 +232,7 @@ def good_choice_end_two():
         else:
           print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords." )
     elif player_choice == "finish":
+      print("\n----------------------------------------------------------------------")
       print("TOO... MUCH... CHOCOLATE! It got out of hand and now you feel too sick to study.")
       print("What a day... You can go out later and buy a new bag to replace the one you've")
       print("devoured today. What are the chances this will happen again tomorrow?")
@@ -353,6 +355,7 @@ def bad_choice_two():
       choices.append("regular")
       break
     elif player_choice == "claim":
+      print("\n----------------------------------------------------------------------")
       print("You click CLAIM NOW. Download the claim form to fill out and... Hmm, your")
       print("mouse has stopped working. Ctrl+Alt+Del... nope. Alt+F4... nope. ESC ESC!")
       print("Files downloading? This isn't good! You PC powers down and won't reboot.")
@@ -398,6 +401,7 @@ def bad_choice_three():
       choices.append("home")
       break
     elif player_choice == "shop":
+      print("\n----------------------------------------------------------------------")
       print("You put on some shoes and head out to the shops, on your walk there you notice")
       print("an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!")
       print("This is too good to pass up, you forget how hungry you are and are consumed only")
@@ -440,11 +444,13 @@ def bad_choice_four():
     player_choice = input("You're so close... Write something, anything!\n")
     player_choice = player_choice.lower()
     if player_choice == "ide":
+      print("\n----------------------------------------------------------------------")
       print("You're in and writing! It's not fast and it's not flashy but it's progress!")
       print("It's a marathon not a sprint and you're still here at the finish line. Great")
       print("effort! Another day you've made a step in the right direction.")
       break
     elif player_choice == "face":
+      print("\n----------------------------------------------------------------------")
       print("We've all been there, it's just not your day. Take a break, grab a cup of tea,")
       print("don't get downhearted and you can try again tomorrow. It's not the perfect run")
       print("but you've put the work in! Good job.")
