@@ -40,16 +40,38 @@ Python
 
 ## Testing
 
+* Testing was carried out constantly in the terminal as well as using Python debugger.
+* After deployment text was modified to fit the 80 character wide window since hidden text is included in CI Linters character counter.
+
 ## Accessibility
+
+* The whole project was built using python. No other languages were used.
 
 ## Issues and bugs
 
+* None.
+
 ## Fixed bugs
 
+* Countless bugs involving new lines and formatting were found and corrected after deployment.
+* Colorama would not add to requirements through terminal so the file was modified manually.
+* Indentation and white space errors were caught by CI Linter and corrected.
+
 ## Validator Testing
+The project was ran through [](https://pep8ci.herokuapp.com/)
+![alt text](assets/readme/linter.jpg)
 
 ## Deployment
 
-## Credits
+This project was deployed using Code Institute's Heroku terminal.
 
-## Special Thanks
+- Clone this repository.
+- Create a new Heroku app.
+- When you create the app, you will need to add two buildpacks from the _Settings_ tab.
+1. `heroku/python`
+2. `heroku/nodejs`
+- Link the Heroku app to the repository.
+- Click Deploy.
+
+## Credits
+https://www.ascii.co.uk/art/ was used for inspiration for the keyboard/screen image.
