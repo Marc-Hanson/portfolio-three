@@ -30,8 +30,8 @@
 
 
 ## Technologies used
-- Language
-Python
+- Languages:
+1. `Python`
 
 ## Frameworks, Deployement & Libraries
 
