@@ -141,6 +141,7 @@ def good_choice_three():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+        break
 
 
 # Good day end nodes.
