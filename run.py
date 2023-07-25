@@ -16,14 +16,18 @@ def big_choice():
     Possible choices are 'B', 'C' and ending '1'.
     """
     while True:
-        print("\n----------------------------------------------------------------------")
-        print("\n You wake up and put on some clothes, grab a can of caffinated energy drink")
-        print("and sit infront of your computer screen, ready for another day of coding.")
-        print("I mean, that's what you should be doing... That is what you're going to do?")
-        print(f"\n It's probably time to start {Fore.GREEN}'work'{Style.RESET_ALL}, the hardest part is starting!")
-        print(f"Just one quick {Fore.GREEN}'game'{Style.RESET_ALL}? I mean, you have got ALL day to study...")
-        print(f"Feet up, music on and finish your {Fore.GREEN}'drink'{Style.RESET_ALL}. You need that caffeine.")
-        player_choice = input("Urgh... Mornings are the worst. What are you going to do?\n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+You wake up and put on some clothes, grab a can of caffinated energy drink and
+sit infront of your computer screen, ready for another day ofcoding. Well,
+that's what you should be doing... That is what you're going to do, right?
+It's probably time to start {Fore.GREEN}'work'{Style.RESET_ALL}, the hardest
+part is starting! Or maybe just one quick {Fore.GREEN}'game'{Style.RESET_ALL}?
+I mean, you have got ALL day to study. Or just put your feet up, music on and
+finish your {Fore.GREEN}'drink'{Style.RESET_ALL}. You need that caffeine before
+your brain starts to work.
+        """)
+        player_choice = input("Urgh, mornings... What are you going to do?\n")
         player_choice = player_choice.lower()
         if player_choice == "work":
             choices.append("work")
@@ -36,28 +40,39 @@ def big_choice():
             choices.clear()
             break
         elif player_choice == "drink":
-            print("\n----------------------------------------------------------------------\n")
-            print("You open up 'Lo-Fi chill hop beats to study slash relax to' and click play")
-            print("Turn up the volume, put your feet up on the desk and close your eyes.")
-            print("Bliss! Well, until you reach for for your trusty energy drink...")
-            print("Which is lying on it's side, it's contents emptied all over your keyboard.")
-            print("Wow... The day is over before it began. Back to bed?")
+            print("""
+\n----------------------------------------------------------------------------\n
+You open up 'Lo-Fi chill hop beats to study slash relax to' and click play.
+Turn up the volume, put your feet up on the desk and close your eyes. Bliss!
+Well, until you reach for for your trusty energy drink. Which is lying on it's
+side, it's contents emptied all over your keyboard. The days over before it
+even really began. What an expensive start to the day...
+            """)
             while True:
-                end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+                end_game = input(f"""
+                \n Game over! Do you wish to try again, {Fore.GREEN}'yes'
+                {Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n
+                """)
                 end_game = end_game.lower()
                 if end_game == "yes":
                     choices.clear()
-                    print("\n----------------------------------------------------------------------\n")
+                    print("\n----------------------------------------------\n")
                     main_game()
                 elif end_game == "no":
-                    print("\n----------------------------------------------------------------------\n")
+                    print("\n----------------------------------------------\n")
                     print("Game terminated. Thank you for playing.")
                     choices.clear()
                     break
                 else:
-                    print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
+                    print(f"""
+You entered {Fore.GREEN}{end_game}{Style.RESET_ALL},
+please enter one of the given keywords.
+                    """)
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+            """)
         break
 
 
@@ -596,12 +611,17 @@ print("""
   |   [__][________________][__]              [__][]|| |
   `----------------------------------------------------'
 """)
-print("Welcome to 'A day in the life', A text based adventure through")
-print("the life of a student. All you need to do is type out the")
-print(f"{Fore.GREEN}'keyword'{Style.RESET_ALL} highlighted in quotes to progress through the day.")
-print(f"You can also type {Fore.GREEN}'quit'{Style.RESET_ALL} at any time to leave the game.")
+print(f"""
+Welcome to 'A day in the life', A text based adventure through a day in the 
+life of a coding student. All you need to do is type out the {Fore.GREEN}
+'keyword'{Style.RESET_ALL} highlighted in quotes to progress through the day.
+You can also type the keyword {Fore.GREEN}'quit'{Style.RESET_ALL} at any point 
+during play to leave the game.
+""")
 while True:
-    game_start = input(f"\nAre you {Fore.GREEN}'ready'{Style.RESET_ALL} to wake up in the life of a coding student?\n")
+    game_start = input(f"""
+Are you {Fore.GREEN}'ready'{Style.RESET_ALL} to wake up and begin?
+    """)
     game_start = game_start.lower()
     if game_start == "ready":
         break
