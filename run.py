@@ -564,13 +564,13 @@ def main_game():
     big_choice()
     if "work" in choices:
         good_choice_one()
-    if "slack" in choices:
-        good_choice_two()
-        if "code" in choices:
-            good_choice_three()
-            if "work" and "slack" and "code" in choices:
-                secret_ending()
-            else:
+        if "slack" in choices:
+            good_choice_two()
+            if "code" in choices:
+                good_choice_three()
+                if "work" and "slack" and "code" in choices:
+                    secret_ending()
+            elif "chocolate" in choices:
                 good_choice_end_two()
         else:
             good_choice_end_one()
