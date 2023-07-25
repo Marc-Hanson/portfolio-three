@@ -4,8 +4,9 @@
 
 #### Live Site [Here](https://a-day-in-the-life-ae933bba8572.herokuapp.com/)
 
-
 #### How to play
+- Keywords are highlighted using a green colour and are contained in single quotes.
+- Enter one of the highlighted keywords from the text to continue in the story.
 - To begin playing the user must type the 'ready' keyword.
 - You can quit at any time using the 'quit' keyword.
 - After entering a keyword you progress to the next node, or reach a dead end.
@@ -24,7 +25,7 @@
 - All inputs are checked and feedback is given to the player incase of mistakes. 
 ![alt text](assets/readme/wrong.jpg)
 
-- All notes and comments in the run.py file follow the projects map which is provided in both the assets file as well as below.
+- All notes and comments in the run.py file follow the projects map which is provided in both the assets file as well as below. The 'good day' path is on the right side of the map, and the 'bad day' path is taken through the left side.
 ![alt text](assets/readme/the_map.jpg)
 
 

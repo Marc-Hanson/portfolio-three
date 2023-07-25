@@ -54,11 +54,11 @@ def big_choice():
                     print("Game terminated. Thank you for playing.")
                     choices.clear()
                     break
+                else:
+                    print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
         else:
-            print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
-    else:
-        print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-    break
+            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+        break
 
 
 # Good day functions.
@@ -260,7 +260,7 @@ def good_choice_end_two():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-            break
+        break
 
 
 # Good day perfect ending.
@@ -434,7 +434,7 @@ def bad_choice_three():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-            break
+        break
 
 
 def bad_choice_four():
