@@ -141,7 +141,6 @@ def good_choice_three():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-        break
 
 
 # Good day end nodes.
@@ -261,7 +260,6 @@ def good_choice_end_two():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-        break
 
 
 # Good day perfect ending.
@@ -311,7 +309,6 @@ def secret_ending():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-        break
 
 
 # Bad day functions.
@@ -388,7 +385,6 @@ def bad_choice_two():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-        break
 
 
 def bad_choice_three():
@@ -435,7 +431,6 @@ def bad_choice_three():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-        break
 
 
 def bad_choice_four():
@@ -471,7 +466,6 @@ def bad_choice_four():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-        break
 
 
 # Bad day perfect end.
@@ -553,7 +547,6 @@ def bad_choice_end():
             break
         else:
             print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
-        break
 
 
 # Main game function.
