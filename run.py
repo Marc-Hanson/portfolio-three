@@ -26,7 +26,7 @@ part is starting! Or maybe just one quick {Fore.GREEN}'game'{Style.RESET_ALL}?
 I mean, you have got ALL day to study. Or just put your feet up, music on and
 finish your {Fore.GREEN}'drink'{Style.RESET_ALL}. You need that caffeine before
 your brain starts to work.
-        """)
+""")
         player_choice = input("Urgh, mornings... What are you going to do?\n")
         player_choice = player_choice.lower()
         if player_choice == "work":
@@ -47,19 +47,23 @@ Turn up the volume, put your feet up on the desk and close your eyes. Bliss!
 Well, until you reach for for your trusty energy drink. Which is lying on it's
 side, it's contents emptied all over your keyboard. The days over before it
 even really began. What an expensive start to the day...
-            """)
+""")
             while True:
                 end_game = input(f"""
-                \n Game over! Do you wish to try again, {Fore.GREEN}'yes'
-                {Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n
-                """)
+Game over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or
+{Fore.GREEN}'no'{Style.RESET_ALL}?
+""")
                 end_game = end_game.lower()
                 if end_game == "yes":
                     choices.clear()
-                    print("\n----------------------------------------------\n")
+                    print("""
+\n----------------------------------------------------------------------------\n
+""")
                     main_game()
                 elif end_game == "no":
-                    print("\n----------------------------------------------\n")
+                    print("""
+\n----------------------------------------------------------------------------\n
+""")
                     print("Game terminated. Thank you for playing.")
                     choices.clear()
                     break
@@ -67,16 +71,15 @@ even really began. What an expensive start to the day...
                     print(f"""
 You entered {Fore.GREEN}{end_game}{Style.RESET_ALL},
 please enter one of the given keywords.
-                    """)
+""")
         else:
             print(f"""
 You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
 please enter one of the given keywords.
-            """)
-        break
-
+""")
 
 # Good day functions.
+
 
 def good_choice_one():
     """
@@ -84,13 +87,18 @@ def good_choice_one():
     Possible choices are 'E' and 'G'.
     """
     while True:
-        print("\n----------------------------------------------------------------------")
-        print("\n You're up and running! You load up for favorite IDE, find the bookmark")
-        print("for your latest online lesson and hit play. You take a sip of caffeine++ and")
-        print("try to zone in on what's going on. Superclasses? Mixins!? Inheritance. What?")
-        print(f"\n It's ok, you've got this. Check through {Fore.GREEN}'slack'{Style.RESET_ALL} and see if there's any tips.")
-        print(f"Or open {Fore.GREEN}'youtube'{Style.RESET_ALL} and come back to it in a little bit, it's too early for this.")
-        player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+You're up and running! You load up for favorite IDE, find the bookmark for your
+latest online lesson and hit play. You take a sip of caffeine++ and try to zone
+in on what's going on. Superclasses? Mixins!? Inheritance. What?
+It's ok you've got this. Check through {Fore.GREEN}'slack'{Style.RESET_ALL} and
+see if there's any tips. Or open {Fore.GREEN}'youtube'{Style.RESET_ALL} and
+come back to it in a little bit, it's too early for this.
+""")
+        player_choice = input("""
+It feels like all hope is gone and your mind is blank, what to do?
+""")
         player_choice = player_choice.lower()
         if player_choice == "slack":
             choices.append("slack")
@@ -103,7 +111,10 @@ def good_choice_one():
             choices.clear()
             break
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
 
 
 def good_choice_two():
@@ -112,13 +123,18 @@ def good_choice_two():
     Possible choices are 'I' and 'J'.
     """
     while True:
-        print("\n----------------------------------------------------------------------")
-        print("\n It a lot of work! But you're sticking with it. It doesn't make complete sense")
-        print("but that's ok. You're starting to understand what you can do even if you can't")
-        print("write it alone or even recite what was on the previous page. But it's enough.")
-        print(f"\n Maybe if you grabbed a snack, some {Fore.GREEN}'chocolate'{Style.RESET_ALL}? It would all make sense.")
-        print(f"Take a sip of your drink and play with the {Fore.GREEN}'code'{Style.RESET_ALL} to figure out how it works.")
-        player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+It's a lot of work! But you're sticking with it. It doesn't make complete sense
+but that's ok. You're starting to understand what you can do even if you can't
+write it alone or even recite what was on the previous page. But it's enough.
+ Maybe if you grabbed a snack, some {Fore.GREEN}'chocolate'{Style.RESET_ALL}?
+It would all make sense. Or take a sip of your drink and play with the
+{Fore.GREEN}'code'{Style.RESET_ALL} to figure out how it works.
+""")
+        player_choice = input("""
+It feels like all hope is gone and your mind is blank, what to do?
+""")
         player_choice = player_choice.lower()
         if player_choice == "chocolate":
             choices.append("chocolate")
@@ -131,7 +147,10 @@ def good_choice_two():
             choices.clear()
             break
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
 
 
 def good_choice_three():
@@ -140,12 +159,17 @@ def good_choice_three():
     Possible choices are 'L' - The secret ending.
     """
     while True:
-        print("\n----------------------------------------------------------------------")
-        print("\n You've done it! You've worked hard and pushed through to get another day done.")
-        print("Now the day is yours to enjoy, deep breath and relax those shoulders!")
-        print("\n You've commited and pushed your code for the day and you're ahead of schedule!")
-        print(f"You can close your terminal by typing {Fore.GREEN}'quit'{Style.RESET_ALL} or guess the secret {Fore.GREEN}'password'{Style.RESET_ALL}.")
-        player_choice = input("It feels like all hope is gone and your mind is blank, what to do?\n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+You've done it! You've worked hard and pushed through to get another day done.
+Now the day is yours to enjoy, deep breath and relax those shoulders!
+You've commited and pushed your code for the day and you're ahead of schedule!
+You can close your terminal by typing {Fore.GREEN}'quit'{Style.RESET_ALL} or
+guess the secret {Fore.GREEN}'password'{Style.RESET_ALL}.
+""")
+        player_choice = input(f"""
+Secret {Fore.GREEN}'password'{Style.RESET_ALL}, hmm. What could it be?
+""")
         player_choice = player_choice.lower()
         if player_choice == "password":
             choices.append("password")
@@ -155,7 +179,10 @@ def good_choice_three():
             choices.clear()
             break
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
 
 
 # Good day end nodes.
@@ -580,7 +607,7 @@ def main_game():
                     secret_ending()
             elif "chocolate" in choices:
                 good_choice_end_two()
-        else:
+        elif "youtube" in choices:
             good_choice_end_one()
     elif "game" in choices:
         bad_choice_one()
@@ -590,8 +617,8 @@ def main_game():
                 bad_choice_three()
                 if "home" in choices:
                     bad_choice_four()
-    else:
-        bad_choice_end()
+        else:
+            bad_choice_end()
 
 
 # ASCII Art landing page, while loop which requires 'ready' to escape.
@@ -621,7 +648,7 @@ during play to leave the game.
 while True:
     game_start = input(f"""
 Are you {Fore.GREEN}'ready'{Style.RESET_ALL} to wake up and begin?
-    """)
+""")
     game_start = game_start.lower()
     if game_start == "ready":
         break
