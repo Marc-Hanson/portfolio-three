@@ -48,30 +48,8 @@ Well, until you reach for for your trusty energy drink. Which is lying on it's
 side, it's contents emptied all over your keyboard. The days over before it
 even really began. What an expensive start to the day...
 """)
-            while True:
-                end_game = input(f"""
-Game over! Do you wish to try again,
-{Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?
-""")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    main_game()
-                elif end_game == "no":
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"""
-You entered {Fore.GREEN}{end_game}{Style.RESET_ALL},
-please enter one of the given keywords.
-""")
+            game_over()
+            break
         else:
             print(f"""
 You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
@@ -213,30 +191,8 @@ Bonsai trimming masters. Bob Ross paintings. Theme park histories. The world
 Rock climbing championships, worldwide backpacking videos, DIY aquariums and
 Independent film making. You've wasted another day in a YouTube rabbit hole!
 """)
-            while True:
-                end_game = input(f"""
-Game over! Do you wish to try again,
-{Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?
-""")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    main_game()
-                elif end_game == "no":
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"""
-You entered {Fore.GREEN}{end_game}{Style.RESET_ALL},
-please enter one of the given keywords.
-""")
+            game_over()
+            break
         elif player_choice == "bed":
             print("""
 \n----------------------------------------------------------------------------\n
@@ -244,30 +200,8 @@ Safe and warm, an episode of Family Guy playing on your phone next to you.
 You're not watching, just listening, until you drift off back to sleep. There
 will always be other days to study. Naps are priceless. Zzzzzzzzz...
 """)
-            while True:
-                end_game = input(f"""
-Game over! Do you wish to try again,
-{Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?
-""")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    main_game()
-                elif end_game == "no":
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"""
-You entered {Fore.GREEN}{end_game}{Style.RESET_ALL},
-please enter one of the given keywords.
-""")
+            game_over()
+            break
         else:
             print(f"""
 You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
@@ -301,30 +235,8 @@ WHAT SORT OF IDEA WAS THIS!? You were already full, now you can barely move!
 You sit there with less than half a milkshake and a few M&Ms left over, but,
 we both know you're not going to stop there. You enter a food coma and die.
 """)
-            while True:
-                end_game = input(f"""
-Game over! Do you wish to try again,
-{Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?
-""")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    main_game()
-                elif end_game == "no":
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"""
-You entered {Fore.GREEN}{end_game}{Style.RESET_ALL},
-please enter one of the given keywords.
-""")
+            game_over()
+            break
         elif player_choice == "finish":
             print("""
 \n----------------------------------------------------------------------------\n
@@ -333,30 +245,8 @@ feel too sick to study. What a day... You can go out later and buy a new bag to
 replace the one you've devoured today. What are the chances this will happen
 again tomorrow?
 """)
-            while True:
-                end_game = input(f"""
-Game over! Do you wish to try again,
-{Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?
-""")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    main_game()
-                elif end_game == "no":
-                    print("""
-\n----------------------------------------------------------------------------\n
-""")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"""
-You entered {Fore.GREEN}{end_game}{Style.RESET_ALL},
-please enter one of the given keywords.
-""")
+            game_over()
+            break
         elif player_choice == "quit":
             print("Game terminated. Thank you for playing.")
             choices.clear()
@@ -486,20 +376,8 @@ def bad_choice_two():
             print("mouse has stopped working. Ctrl+Alt+Del... nope. Alt+F4... nope. ESC ESC!")
             print("Files downloading? This isn't good! You PC powers down and won't reboot.")
             print("It's not a cheap life lesson but it's an important one. Your game is over!")
-            while True:
-                end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("\n----------------------------------------------------------------------\n")
-                    main_game()
-                elif end_game == "no":
-                    print("\n----------------------------------------------------------------------\n")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
+            game_over()
+            break
         elif player_choice == "quit":
             print("Game terminated. Thank you for playing.")
             choices.clear()
@@ -532,20 +410,8 @@ def bad_choice_three():
             print("an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!")
             print("This is too good to pass up, you forget how hungry you are and are consumed only")
             print("by the dream of finally owning a next gen console. No more time to study!")
-            while True:
-                end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("\n----------------------------------------------------------------------\n")
-                    main_game()
-                elif end_game == "no":
-                    print("\n----------------------------------------------------------------------\n")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
+            game_over()
+            break
         elif player_choice == "quit":
             print("Game terminated. Thank you for playing.")
             choices.clear()
@@ -610,58 +476,22 @@ def bad_choice_end():
             print("CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU")
             print("KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR")
             print("INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!")
-            while True:
-                end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("\n----------------------------------------------------------------------\n")
-                    main_game()
-                elif end_game == "no":
-                    print("\n----------------------------------------------------------------------\n")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
+            game_over()
+            break
         elif player_choice == "clear":
             print("\n----------------------------------------------------------------------")
             print("You hide the chat window and keep doing what you're doing. It takes a while and")
             print("a couple more attempts but you get the dungeon finished. Your quests are done!")
             print("Success. Wait, it's getting dark and we didn't study!?")
-            while True:
-                end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("\n----------------------------------------------------------------------\n")
-                    main_game()
-                elif end_game == "no":
-                    print("\n----------------------------------------------------------------------\n")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
+            game_over()
+            break
         elif player_choice == "ragequit":
             print("\n----------------------------------------------------------------------")
             print("You close the game, throw your headset on the keyboard and stare in to the middle")
             print("distance. Energy levels depleted and filled with a fresh hatred for anybody and")
             print("everybody. Maybe online gaming just isn't for you, other people just make you angry.")
-            while True:
-                end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
-                end_game = end_game.lower()
-                if end_game == "yes":
-                    choices.clear()
-                    print("\n----------------------------------------------------------------------\n")
-                    main_game()
-                elif end_game == "no":
-                    print("\n----------------------------------------------------------------------\n")
-                    print("Game terminated. Thank you for playing.")
-                    choices.clear()
-                    break
-                else:
-                    print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
+            game_over()
+            break
         elif player_choice == "quit":
             print("Game terminated. Thank you for playing.")
             choices.clear()
@@ -673,7 +503,7 @@ def bad_choice_end():
 # Main game function.
 def main_game():
     """
-    Main game functions, will run in order as the game progresses.
+    Main game logic, will run in order as the game progresses.
     """
     big_choice()
     if "work" in choices:
@@ -703,13 +533,31 @@ def main_game():
             return
 
 
+# Game over function.
+def game_over():
+    """
+    Function to provide replay game loop without restarting app.
+    """
+    while True:
+        end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+        end_game = end_game.lower()
+        if end_game == "yes":
+            choices.clear()
+            print("""
+\n--------------------------------------------------------\n""")
+            main_game()
+        elif end_game == "no":
+            print("""
+\n----------------------------------------------------------------------\n""")
+            print("Game terminated. Thank you for playing.")
+            choices.clear()
+            return
+        else:
+            print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
+        
+
 # ASCII Art landing page, while loop which requires 'ready' to escape.
 print("""
-                      ____|====|____
-     _______________/                \_______________ 
-   _|________________________________________________|_
-  |____________________________________________________|
-     
   ,----------------------------------------------------,
   | [][][][][]  [][][][][]  [][][][]  [][__]  [][][][] |
   |                                                    |
