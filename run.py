@@ -498,33 +498,45 @@ def bad_choice_end():
     Possible choices are endings '2', '3' and '6'.
     """
     while True:
-        print("\n----------------------------------------------------------------------")
-        print("\n It's been two hours of dying in a dungeon, with the same angry group of")
-        print("kids. They've insulted your mom, your pc, your dog, your voice. It's all your")
-        print("fault, apparently...")
-        print(f"\n Do you unleash your inner {Fore.GREEN}'demon'{Style.RESET_ALL} and rage at these nerds? Can you keep your")
-        print(f"cool and {Fore.GREEN}'clear'{Style.RESET_ALL} the last boss? Or just {Fore.GREEN}'ragequit'{Style.RESET_ALL} out and leave them to it?")
-        player_choice = input("I mean there are no right answers are there, what do you think?\n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+It's been two hours of dying in a dungeon, with the same angry group of kids.
+They've insulted your mom, your pc, your dog, your voice. It's all your fault,
+apparently... Do you unleash your inner {Fore.GREEN}'demon'{Style.RESET_ALL}
+and rage at these nerds? Can you keep your cool and {Fore.GREEN}'clear'
+{Style.RESET_ALL} the last boss? Or {Fore.GREEN}'ragequit'{Style.RESET_ALL} out
+and leave them to it?
+""")
+        player_choice = input("""
+I mean there are no right answers now are there, what do you think?
+""")
         player_choice = player_choice.lower()
         if player_choice == "demon":
-            print("\n----------------------------------------------------------------------")
-            print("CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU")
-            print("KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR")
-            print("INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!")
+            print("""
+\n----------------------------------------------------------------------------\n
+CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU
+KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR
+INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!
+""")
             game_over()
             break
         elif player_choice == "clear":
-            print("\n----------------------------------------------------------------------")
-            print("You hide the chat window and keep doing what you're doing. It takes a while and")
-            print("a couple more attempts but you get the dungeon finished. Your quests are done!")
-            print("Success. Wait, it's getting dark and we didn't study!?")
+            print("""
+\n----------------------------------------------------------------------------\n
+You hide the chat window and keep doing what you're doing. It takes a while and
+a couple more attempts but you get the dungeon finished. Your quests are done!
+Success. Wait, it's getting dark and we didn't study!? Well...
+""")
             game_over()
             break
         elif player_choice == "ragequit":
-            print("\n----------------------------------------------------------------------")
-            print("You close the game, throw your headset on the keyboard and stare in to the middle")
-            print("distance. Energy levels depleted and filled with a fresh hatred for anybody and")
-            print("everybody. Maybe online gaming just isn't for you, other people just make you angry.")
+            print("""
+\n----------------------------------------------------------------------------\n
+You close the game, throw your headset on the keyboard and stare in to the
+middle distance. Energy levels depleted and filled with a fresh hatred for
+anybody and everybody. Maybe online gaming just isn't for you, other people
+just make you angry after all.
+""")
             game_over()
             break
         elif player_choice == "quit":
@@ -532,7 +544,10 @@ def bad_choice_end():
             choices.clear()
             break
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
 
 
 # Main game function.
@@ -574,22 +589,30 @@ def game_over():
     Function to provide replay game loop without restarting app.
     """
     while True:
-        end_game = input(f"\nGame over! Do you wish to try again, {Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}?\n")
+        end_game = input(f"""
+\n Game over! Do you wish to try again,
+{Fore.GREEN}'yes'{Style.RESET_ALL} or {Fore.GREEN}'no'{Style.RESET_ALL}? \n
+""")
         end_game = end_game.lower()
         if end_game == "yes":
             choices.clear()
             print("""
-\n--------------------------------------------------------\n""")
+\n----------------------------------------------------------------------------\n
+""")
             main_game()
         elif end_game == "no":
             print("""
-\n----------------------------------------------------------------------\n""")
+\n----------------------------------------------------------------------------\n
+""")
             print("Game terminated. Thank you for playing.")
             choices.clear()
             return
         else:
-            print(f"You entered {Fore.GREEN}{end_game}{Style.RESET_ALL}, please enter one of the given keywords.")
-        
+            print(f"""
+You entered {Fore.GREEN}{end_game}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
+
 
 # ASCII Art landing page, while loop which requires 'ready' to escape.
 print("""
@@ -604,10 +627,10 @@ print("""
   `----------------------------------------------------'
 """)
 print(f"""
-Welcome to 'A day in the life', A text based adventure through a day in the 
+Welcome to 'A day in the life', A text based adventure through a day in the
 life of a coding student. All you need to do is type out the {Fore.GREEN}
 'keyword'{Style.RESET_ALL} highlighted in quotes to progress through the day.
-You can also type the keyword {Fore.GREEN}'quit'{Style.RESET_ALL} at any point 
+You can also type the keyword {Fore.GREEN}'quit'{Style.RESET_ALL} at any point
 during play to leave the game.
 """)
 while True:
@@ -618,9 +641,11 @@ Are you {Fore.GREEN}'ready'{Style.RESET_ALL} to wake up and begin?
     if game_start == "ready":
         break
     elif game_start == "quit":
-        print("Not now... You didn't even start playing! Do you think that's funny?")
+        print("\n Not now... You didn't even start playing! Try again. \n")
     elif game_start == "keyword":
-        print("Yes... that is a keyword. But it's not the right one, try again.")
+        print("\n Yes... that is a keyword. But it's not the right one. \n")
     else:
-        print(f"That's ok, we can wait until you're {Fore.GREEN}'ready'{Style.RESET_ALL}...\n")    
+        print(f"""
+That's ok, we can wait until you're {Fore.GREEN}'ready'{Style.RESET_ALL}.
+""")
 main_game()
