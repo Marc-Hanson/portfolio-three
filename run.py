@@ -330,13 +330,17 @@ def bad_choice_one():
     Possible choices are 'D' and 'F'.
     """
     while True:
-        print("\n----------------------------------------------------------------------\n")
-        print("Just one one lttle game right? You boot up World of Warcraft to check your")
-        print("auctions and somebody is starting a group for that dungeon you need! You can")
-        print("get so many quests done in one quick run. ")
-        print(f"\n Let's go, finish {Fore.GREEN}'fast'{Style.RESET_ALL} and get back to studying! Or {Fore.GREEN}'close'{Style.RESET_ALL} the game and")
-        print("focus up. You've delayed things enough.")
-        player_choice = input("It's your choice though... I'm just a text interface.\n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+Just one one lttle game right? You boot up World of Warcraft to check your mail
+and somebody is starting a group for that dungeon you need! You can get so many
+quests done in one quick run. Let's go, finish {Fore.GREEN}'fast'
+{Style.RESET_ALL} and get back to studying! Or {Fore.GREEN}'close'
+{Style.RESET_ALL} the game and focus up. You've delayed things enough.
+""")
+        player_choice = input("""
+It's your choice though... I'm just a text interface. What will it be?
+""")
         player_choice = player_choice.lower()
         if player_choice == "fast":
             choices.append("fast")
@@ -349,7 +353,10 @@ def bad_choice_one():
             choices.clear()
             break
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
 
 
 def bad_choice_two():
@@ -358,24 +365,30 @@ def bad_choice_two():
     Possible choices are 'H' and ending '7'.
     """
     while True:
-        print("\n----------------------------------------------------------------------\n")
-        print("Focus, focus, focus! You're in the zone! The study zone! No more stalling.")
-        print("You open up your emails to clear out all the spam and see if there are any")
-        print("updates from your course provider.")
-        print("\n You've won an air fryer! It's not a competition you remember entering but")
-        print(f"it IS a free air fryer. Let's {Fore.GREEN}'claim'{Style.RESET_ALL} it! Or delete it and just go back to a")
-        print(f"{Fore.GREEN}'regular'{Style.RESET_ALL} non air frying lifestlye.")
-        player_choice = input("Can you resist that perfectly cooked crispy goodness?\n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+Focus, focus, focus! You're in the zone! The study zone! No more stalling. You
+open up your emails to clear out all the spam and see if there are any updates
+from your course provider. You've won an air fryer! It's not a competition you
+remember entering but it IS a free air fryer. Let's {Fore.GREEN}'claim'
+{Style.RESET_ALL} it! Or delete it and just go back to a {Fore.GREEN}'regular'
+{Style.RESET_ALL} non air frying lifestlye.
+""")
+        player_choice = input("""
+Uh oh! Can you resist that perfectly cooked crispy goodness?
+""")
         player_choice = player_choice.lower()
         if player_choice == "regular":
             choices.append("regular")
             break
         elif player_choice == "claim":
-            print("\n----------------------------------------------------------------------")
-            print("You click CLAIM NOW. Download the claim form to fill out and... Hmm, your")
-            print("mouse has stopped working. Ctrl+Alt+Del... nope. Alt+F4... nope. ESC ESC!")
-            print("Files downloading? This isn't good! You PC powers down and won't reboot.")
-            print("It's not a cheap life lesson but it's an important one. Your game is over!")
+            print("""
+\n----------------------------------------------------------------------------\n
+You click CLAIM NOW. Download the claim form to fill out and... Hmm, your mouse
+has stopped working. Ctrl+Alt+Del... nope. Alt+F4... nope. ESC ESC! Files
+downloading? This isn't good! You PC powers down and won't reboot. It's not a
+cheap life lesson but it's an important one. Your game is over!
+""")
             game_over()
             break
         elif player_choice == "quit":
@@ -383,7 +396,10 @@ def bad_choice_two():
             choices.clear()
             break
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
 
 
 def bad_choice_three():
@@ -392,24 +408,31 @@ def bad_choice_three():
     Possible choices are 'K' and ending '8'.
     """
     while True:
-        print("\n----------------------------------------------------------------------\n")
-        print("Still struggling to start, but you're still trying your best! I mean, how many")
-        print("more distractions could there possible be? It's hard to concentrate on an empty")
-        print("stomach. Your stomach grumbles away, you go to the kitchen to check for food.")
-        print(f"\n There's nothing that catches your eye, just a quick run to the local {Fore.GREEN}'shop'{Style.RESET_ALL}")
-        print(f"to pick up some treats. Make something with what you already have at {Fore.GREEN}'home'{Style.RESET_ALL}, you")
-        print("need to get to work!")
-        player_choice = input("Make a something with food you have at home or go out shopping? \n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+Still struggling to start, but you're still trying your best! I mean, how many
+more distractions could there possible be? It's hard to concentrate on an empty
+stomach. Your stomach grumbles away, you go to the kitchen to check for food.
+There's nothing that catches your eye, just a quick run to the local
+{Fore.GREEN}'shop'{Style.RESET_ALL} to pick up some treats. Make something with
+what you already have at {Fore.GREEN}'home'{Style.RESET_ALL}, you need to get
+started with this work!
+""")
+        player_choice = input("""
+Make a something with food you have at home or go out shopping?
+""")
         player_choice = player_choice.lower()
         if player_choice == "home":
             choices.append("home")
             break
         elif player_choice == "shop":
-            print("\n----------------------------------------------------------------------")
-            print("You put on some shoes and head out to the shops, on your walk there you notice")
-            print("an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!")
-            print("This is too good to pass up, you forget how hungry you are and are consumed only")
-            print("by the dream of finally owning a next gen console. No more time to study!")
+            print("""
+\n----------------------------------------------------------------------------\n
+You put on some shoes and head out to the shops, on your walk there you notice
+an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!
+This is too good to pass up, you forget how hungry you are and are consumed
+only by the dream of finally owning a next gen console. No more time to study!
+""")
             game_over()
             break
         elif player_choice == "quit":
@@ -417,7 +440,10 @@ def bad_choice_three():
             choices.clear()
             break
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
 
 
 def bad_choice_four():
@@ -426,33 +452,42 @@ def bad_choice_four():
     Possible choices are endings '11' and '14'.
     """
     while True:
-        print("\n----------------------------------------------------------------------\n")
-        print("You've finished your drink, ate your food, been distracted and came though it")
-        print("all and you're still here. It's not always easy but you should be rewarded for")
-        print("your efforts!")
-        print(f"\n Open up your {Fore.GREEN}'IDE'{Style.RESET_ALL} and get to work, the day is wasting away. Let's get")
-        print("something written. It doesn't have to be world changing but every little step")
-        print(f"is progress. Kind of a {Fore.GREEN}'face'{Style.RESET_ALL} down on the keyboard and cry kind of day?")
-        player_choice = input("You're so close... Write something, anything!\n")
+        print(f"""
+\n----------------------------------------------------------------------------\n
+You've finished your drink, ate your food, been distracted and came though it
+all and you're still here. It's not always easy but you should be rewarded for
+your efforts! Open up your {Fore.GREEN}'IDE'{Style.RESET_ALL} and get to work,
+the day is wasting away. Let's get something written. It doesn't have to be
+world changing but every little step is progress. Kind of a {Fore.GREEN}'face'
+{Style.RESET_ALL} down on the keyboard and cry kind of day?
+""")
+        player_choice = input("You're so close... Write something, anything!")
         player_choice = player_choice.lower()
         if player_choice == "ide":
-            print("\n----------------------------------------------------------------------")
-            print("You're in and writing! It's not fast and it's not flashy but it's progress!")
-            print("It's a marathon not a sprint and you're still here at the finish line. Great")
-            print("effort! Another day you've made a step in the right direction.")
+            print("""
+\n----------------------------------------------------------------------------\n
+You're in and writing! It's not fast and it's not flashy but it's progress!
+It's a marathon not a sprint and you're still here at the finish line. Great
+effort! Another day you've made a step in the right direction.
+""")
             break
         elif player_choice == "face":
-            print("\n----------------------------------------------------------------------")
-            print("We've all been there, it's just not your day. Take a break, grab a cup of tea,")
-            print("don't get downhearted and you can try again tomorrow. It's not the perfect run")
-            print("but you've put the work in! Good job.")
+            print("""
+\n----------------------------------------------------------------------------\n
+We've all been there, it's just not your day. Take a break, grab a cup of tea,
+don't get downhearted and you can try again tomorrow. It's not the perfect run
+but you've put the work in! Good job.
+""")
             break
         elif player_choice == "quit":
             print("Game terminated. Thank you for playing.")
             choices.clear()
             break
         else:
-            print(f"You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL}, please enter one of the given keywords.")
+            print(f"""
+You entered {Fore.GREEN}{player_choice}{Style.RESET_ALL},
+please enter one of the given keywords.
+""")
 
 
 # Bad day perfect end.
