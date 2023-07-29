@@ -13,25 +13,28 @@
 - After reaching a successful or unsuccessful ending you are asked if you would like to try again.
 
 ## Features
-- Upon running the game you are greeted with a picture of a keyboard and screen is ASCII art format. 
-![alt text](assets/readme/ascii.jpg)
+- Upon running the game you are greeted with a picture of a keyboard and screen is ASCII art format. <br>
+![ASCII ART](assets/readme/ascii.jpg)
 
-- All 3 options are working answers and have small custom messages, and once 'ready' is entered the game will begin. Other responses will give the user feeedback to provide a different answer.
-![alt text](assets/readme/ready.jpg)
+- All 3 options are working answers and have small custom messages, and once 'ready' is entered the game will begin. Other responses will give the user feeedback to provide a different answer.<br>
+![USER INPUT](assets/readme/ready.jpg)
 
-- Once 'ready' is entered the game will begin and the story starts.
-![alt text](assets/readme/game_started.jpg)
+- Once 'ready' is entered the game will begin and the story starts.<br>
+![START](assets/readme/game_started.jpg)
 
-- All inputs are checked and feedback is given to the player incase of mistakes. 
-![alt text](assets/readme/wrong.jpg)
+- All inputs are checked and feedback is given to the player incase of mistakes. <br>
+![WRONG ANSWER](assets/readme/wrong.jpg)
 
-- All notes and comments in the run.py file follow the projects map which is provided in both the assets file as well as below. The 'good day' path is on the right side of the map, and the 'bad day' path is taken through the left side.
-![alt text](assets/readme/the_map.jpg)
+- All notes and comments in the run.py file follow the projects map which is provided in both the assets file as well as below. The 'good day' path is on the right side of the map, and the 'bad day' path is taken through the left side.<br>
+![MAP](assets/readme/the_map.jpg)
+
+- The left side of the map is viewed as a bad day and the right side as a good day. Both sides have the same amount of dead ends as well as both having successful game endings.
 
 
 ## Technologies used
 - Languages:
-1. `Python`
+1. Python
+2. Colorama extension
 
 ## Frameworks, Deployement & Libraries
 
@@ -42,11 +45,14 @@
 ## Testing
 
 * Testing was carried out constantly in the terminal as well as using Python debugger.
+* User input was tested in every node of the project to make sure the path was followed, this is ensured through while loops.
+* User input is also checked in every node to allow a user to quit at any time.
 * After deployment text was modified to fit the 80 character wide window since hidden text is included in CI Linters character counter.
 
 ## Accessibility
 
-* The whole project was built using python. No other languages were used.
+* The project is 500+ lines of code. This is because there are 12 different nodes and 15 possible end points.
+* This leads to there being large amounts of print statements and lots of text.
 
 ## Issues and bugs
 
@@ -57,10 +63,11 @@
 * Countless bugs involving new lines and formatting were found and corrected after deployment.
 * Colorama would not add to requirements through terminal so the file was modified manually.
 * Indentation and white space errors were caught by CI Linter and corrected.
+* Game over function was created to allow easy escape from nested while loops.
 
 ## Validator Testing
 The project was ran through [](https://pep8ci.herokuapp.com/)
-![alt text](assets/readme/linter.jpg)
+![LINTER](assets/readme/linter.jpg)
 
 ## Deployment
 
