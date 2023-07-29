@@ -12,22 +12,24 @@ choices = []
 # Map of the project is included as an image in inside the Readme.
 def big_choice():
     """
-    First set of choices, currently in 'A'.
-    Possible choices are 'B', 'C' and ending '1'.
+    First set of choices, you are currently in 'A'.
+    Possible choices are 'B', 'C' and ending number '1'.
     """
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
 You wake up and put on some clothes, grab a can of caffinated energy drink and
-sit infront of your computer screen, ready for another day ofcoding. Well,
+sit infront of your computer screen, ready for another day of coding. Well,
 that's what you should be doing... That is what you're going to do, right?
 It's probably time to start {Fore.GREEN}'work'{Style.RESET_ALL}, the hardest
 part is starting! Or maybe just one quick {Fore.GREEN}'game'{Style.RESET_ALL}?
-I mean, you have got ALL day to study. Or just put your feet up, music on and
-finish your {Fore.GREEN}'drink'{Style.RESET_ALL}. You need that caffeine before
-your brain starts to work.
+I mean, you have got ALL day to study. Or just put your feet up, put some music
+on and finish your {Fore.GREEN}'drink'{Style.RESET_ALL}. You need that
+caffeine before your brain starts to work.
 """)
-        player_choice = input("Urgh, mornings... What are you going to do?\n")
+        player_choice = input("""
+Urgh, mornings... What are you going to do?
+""")
         player_choice = player_choice.lower()
         if player_choice == "work":
             choices.append("work")
@@ -45,8 +47,8 @@ your brain starts to work.
 You open up 'Lo-Fi chill hop beats to study slash relax to' and click play.
 Turn up the volume, put your feet up on the desk and close your eyes. Bliss!
 Well, until you reach for for your trusty energy drink. Which is lying on it's
-side, it's contents emptied all over your keyboard. The days over before it
-even really began. What an expensive start to the day...
+side, it's contents emptied all over your keyboard. The day is over before it
+even really began. What an expensive lesson to learn...
 """)
             game_over()
             break
@@ -61,7 +63,7 @@ please enter one of the given keywords.
 
 def good_choice_one():
     """
-    Good path, first choice. Currently in 'C'.
+    Good path, first choice. You are currently in 'C'.
     Possible choices are 'E' and 'G'.
     """
     while True:
@@ -97,7 +99,7 @@ please enter one of the given keywords.
 
 def good_choice_two():
     """
-    Good path, second choice. Currently in 'G'.
+    Good path, second choice. You are currently in 'G'.
     Possible choices are 'I' and 'J'.
     """
     while True:
@@ -106,12 +108,12 @@ def good_choice_two():
 It's a lot of work! But you're sticking with it. It doesn't make complete sense
 but that's ok. You're starting to understand what you can do even if you can't
 write it alone or even recite what was on the previous page. But it's enough.
- Maybe if you grabbed a snack, some {Fore.GREEN}'chocolate'{Style.RESET_ALL}?
+Maybe if you grabbed a snack, some {Fore.GREEN}'chocolate'{Style.RESET_ALL}?
 It would all make sense. Or take a sip of your drink and play with the
 {Fore.GREEN}'code'{Style.RESET_ALL} to figure out how it works.
 """)
         player_choice = input("""
-It feels like all hope is gone and your mind is blank, what to do?
+It's so easy to get distracted, what will you do?
 """)
         player_choice = player_choice.lower()
         if player_choice == "chocolate":
@@ -133,7 +135,7 @@ please enter one of the given keywords.
 
 def good_choice_three():
     """
-    Good path, third choice. Currently in 'I'.
+    Good path, third choice. You are currently in 'I'.
     Possible choices are 'L' - The secret ending.
     """
     while True:
@@ -167,7 +169,7 @@ please enter one of the given keywords.
 
 def good_choice_end_one():
     """
-    Good path, dead end terminal. Currently in 'E'.
+    Good path, dead end terminal. You are currently in 'E'.
     Possible choices are endings '4' and '5'.
     """
     while True:
@@ -175,13 +177,12 @@ def good_choice_end_one():
 \n----------------------------------------------------------------------------\n
 It's been a couple of hours now, you've watched a man making stone age tools
 using only his hands. You've seen an American couple convert a van in to a
-campervan. And you've wathced several episodes of How It's Made... None of this
+campervan. And you've watched several episodes of How It's Made... None of this
 is getting work done! Are you just going to watch {Fore.GREEN}'more'
 {Style.RESET_ALL} videos? Or back to {Fore.GREEN}'bed'{Style.RESET_ALL}!?
-You haven't done anything! Do not turn this computer off!
 """)
         player_choice = input("""
-It feels like all hope is gone and your mind is blank, what to do?
+You haven't done anything! Do not turn this computer off! Hello?
 """)
         player_choice = player_choice.lower()
         if player_choice == "more":
@@ -211,15 +212,15 @@ please enter one of the given keywords.
 
 def good_choice_end_two():
     """
-    Good path, dead end terminal. Currently in 'J'.
+    Good path, dead end terminal. You are currently in 'J'.
     Possible choices are endings '9' and '10'.
     """
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
 Mmmm, chocolate. There's a jumbo bag of peanut M&Ms that's been waiting for you
-and today is the day! You rip open and the bag and just a couple turns to a few
-more won't hurt. You look down and you've eaten more than half of a bag...
+and today is the day! You rip open and the bag and "just a couple" turns to "a
+few more won't hurt". You look down and you've eaten more than half of a bag...
 Well, it's less than one portion left so you might as well {Fore.GREEN}'finish'
 {Style.RESET_ALL} them off! Or do you think you need a {Fore.GREEN}'milkshake'
 {Style.RESET_ALL} to wash down this tasty snack.
@@ -233,14 +234,15 @@ This isn't going to end well, what are you going to choose?
 \n----------------------------------------------------------------------------\n
 WHAT SORT OF IDEA WAS THIS!? You were already full, now you can barely move!
 You sit there with less than half a milkshake and a few M&Ms left over, but,
-we both know you're not going to stop there. You enter a food coma and die.
+we both know you're not going to stop there. After finishing both the milkshake
+and chocolate, you enter a food coma and die.
 """)
             game_over()
             break
         elif player_choice == "finish":
             print("""
 \n----------------------------------------------------------------------------\n
-TOO... MUCH... CHOCOLATE! THings have really gotten out of hand and now you
+TOO... MUCH... CHOCOLATE! Things have really gotten out of hand and now you
 feel too sick to study. What a day... You can go out later and buy a new bag to
 replace the one you've devoured today. What are the chances this will happen
 again tomorrow?
@@ -262,7 +264,7 @@ please enter one of the given keywords.
 
 def secret_ending():
     """
-    Good path, secret ending. Currently in 'L'.
+    Good path, secret ending. You are currently in 'L'.
     Possible choices are endings '12', '13' and '15'.
     """
     while True:
@@ -305,8 +307,6 @@ Your hard work has been noticed and you're noticed by top companies on LinkedIn
 Using your coding knowledge you've built apps that detect and help eliminate
 almost every known disease to humankind. Oh, and you're like super rich. And
 erm, lots of very attractive, funny, amazing people all want to marry you!
-All because you decided to {choices[0]},
-use {choices[1]} and write pro {choices[2]}.
 
 Excellent work, you're a god among coders <3
 """)
@@ -332,11 +332,11 @@ def bad_choice_one():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-Just one one lttle game right? You boot up World of Warcraft to check your mail
+Just one lttle game right? You boot up World of Warcraft to check your mailbox
 and somebody is starting a group for that dungeon you need! You can get so many
 quests done in one quick run. Let's go, finish {Fore.GREEN}'fast'
 {Style.RESET_ALL} and get back to studying! Or {Fore.GREEN}'close'
-{Style.RESET_ALL} the game and focus up. You've delayed things enough.
+{Style.RESET_ALL} the game and focus up. You've probably delayed things enough.
 """)
         player_choice = input("""
 It's your choice though... I'm just a text interface. What will it be?
@@ -361,7 +361,7 @@ please enter one of the given keywords.
 
 def bad_choice_two():
     """
-    Bad path, first choice. currently in F.
+    Bad path, first choice. You are currently in F.
     Possible choices are 'H' and ending '7'.
     """
     while True:
@@ -404,13 +404,13 @@ please enter one of the given keywords.
 
 def bad_choice_three():
     """
-    Bad path, first choice. currently in H.
+    Bad path, first choice. You are currently in H.
     Possible choices are 'K' and ending '8'.
     """
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-Still struggling to start, but you're still trying your best! I mean, how many
+You're struggling to start, but you're still trying your best! I mean, how many
 more distractions could there possible be? It's hard to concentrate on an empty
 stomach. Your stomach grumbles away, you go to the kitchen to check for food.
 There's nothing that catches your eye, just a quick run to the local
@@ -431,7 +431,8 @@ Make a something with food you have at home or go out shopping?
 You put on some shoes and head out to the shops, on your walk there you notice
 an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!
 This is too good to pass up, you forget how hungry you are and are consumed
-only by the dream of finally owning a next gen console. No more time to study!
+only by the dream of finally owning a next gen console. Your hands slowly morph
+in to controller shaped claws and you're no longer able to study.
 """)
             game_over()
             break
@@ -448,7 +449,7 @@ please enter one of the given keywords.
 
 def bad_choice_four():
     """
-    Bad path, first choice. currently in H.
+    Bad path, first choice. You are currently in H.
     Possible choices are endings '11' and '14'.
     """
     while True:
@@ -458,8 +459,8 @@ You've finished your drink, ate your food, been distracted and came though it
 all and you're still here. It's not always easy but you should be rewarded for
 your efforts! Open up your {Fore.GREEN}'IDE'{Style.RESET_ALL} and get to work,
 the day is wasting away. Let's get something written. It doesn't have to be
-world changing but every little step is progress. Kind of a {Fore.GREEN}'face'
-{Style.RESET_ALL} down on the keyboard and cry kind of day?
+world changing but every little step is progress. Or is it more a {Fore.GREEN}
+'face'{Style.RESET_ALL} down on the keyboard and cry kind of day?
 """)
         player_choice = input("You're so close... Write something, anything!")
         player_choice = player_choice.lower()
@@ -468,7 +469,7 @@ world changing but every little step is progress. Kind of a {Fore.GREEN}'face'
 \n----------------------------------------------------------------------------\n
 You're in and writing! It's not fast and it's not flashy but it's progress!
 It's a marathon not a sprint and you're still here at the finish line. Great
-effort! Another day you've made a step in the right direction.
+effort! Another day you've made a step in the right direction. Well done :)
 """)
             break
         elif player_choice == "face":
@@ -476,7 +477,7 @@ effort! Another day you've made a step in the right direction.
 \n----------------------------------------------------------------------------\n
 We've all been there, it's just not your day. Take a break, grab a cup of tea,
 don't get downhearted and you can try again tomorrow. It's not the perfect run
-but you've put the work in! Good job.
+but you've put the work in! Good job trying your best.
 """)
             break
         elif player_choice == "quit":
@@ -516,7 +517,7 @@ I mean there are no right answers now are there, what do you think?
 \n----------------------------------------------------------------------------\n
 CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU
 KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR
-INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!
+INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS YOUR LIFE NOW!
 """)
             game_over()
             break
@@ -525,7 +526,7 @@ INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS LIFE NOW!
 \n----------------------------------------------------------------------------\n
 You hide the chat window and keep doing what you're doing. It takes a while and
 a couple more attempts but you get the dungeon finished. Your quests are done!
-Success. Wait, it's getting dark and we didn't study!? Well...
+Success. Wait, it's getting dark and we didn't study!? Uh oh...
 """)
             game_over()
             break
@@ -534,8 +535,8 @@ Success. Wait, it's getting dark and we didn't study!? Well...
 \n----------------------------------------------------------------------------\n
 You close the game, throw your headset on the keyboard and stare in to the
 middle distance. Energy levels depleted and filled with a fresh hatred for
-anybody and everybody. Maybe online gaming just isn't for you, other people
-just make you angry after all.
+anybody and everybody. Maybe online gaming just isn't for you, maybe you should
+delete the games and remove that temptation for next time?
 """)
             game_over()
             break
