@@ -5,7 +5,7 @@ from colorama import Fore
 from colorama import Style
 colorama_init(autoreset=True)
 
-# Stores choices from user input, for fstring and path selection.
+# Stores choices from user input for path selection.
 choices = []
 
 
@@ -18,14 +18,17 @@ def big_choice():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-You wake up and put on some clothes, grab a can of caffinated energy drink and
-sit infront of your computer screen, ready for another day of coding. Well,
-that's what you should be doing... That is what you're going to do, right?
+
+You wake up, put on some clothes, grab a can of caffeinated energy drink, and
+sit in front of your computer screen, ready for another day of coding. Well,
+That's what you should be doing. That's what you're going to do, right?
 It's probably time to start {Fore.GREEN}'work'{Style.RESET_ALL}, the hardest
 part is starting! Or maybe just one quick {Fore.GREEN}'game'{Style.RESET_ALL}?
-I mean, you have got ALL day to study. Or just put your feet up, put some music
-on and finish your {Fore.GREEN}'drink'{Style.RESET_ALL}. You need that
+I mean, you have all day to study. Or just put your feet up, put on some music.
+And finish your {Fore.GREEN}'drink'{Style.RESET_ALL}. You need some
 caffeine before your brain starts to work.
+
+
 """)
         player_choice = input("""
 Urgh, mornings... What are you going to do?
@@ -45,9 +48,9 @@ Urgh, mornings... What are you going to do?
             print("""
 \n----------------------------------------------------------------------------\n
 You open up 'Lo-Fi chill hop beats to study slash relax to' and click play.
-Turn up the volume, put your feet up on the desk and close your eyes. Bliss!
-Well, until you reach for for your trusty energy drink. Which is lying on it's
-side, it's contents emptied all over your keyboard. The day is over before it
+Turn up the volume, put your feet up on the desk, and close your eyes. Bliss!
+Well, until you reach for your trusty energy drink. Which is lying on it's
+side, its contents emptied all over your keyboard. The day is over before it
 even really began. What an expensive lesson to learn...
 """)
             game_over()
@@ -69,12 +72,12 @@ def good_choice_one():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-You're up and running! You load up for favorite IDE, find the bookmark for your
-latest online lesson and hit play. You take a sip of caffeine++ and try to zone
-in on what's going on. Superclasses? Mixins!? Inheritance. What?
-It's ok you've got this. Check through {Fore.GREEN}'slack'{Style.RESET_ALL} and
-see if there's any tips. Or open {Fore.GREEN}'youtube'{Style.RESET_ALL} and
-come back to it in a little bit, it's too early for this.
+You're up and running! You load up your favorite IDE, find the bookmark for
+your latest online lesson and hit play. You take a sip of caffeine++ and try to
+zone in on what's going on. Superclasses? Mixins!? Inheritance. What?
+It's okay; you've got this. Check through {Fore.GREEN}'slack'{Style.RESET_ALL}
+and see if there are any tips. Or open {Fore.GREEN}'youtube'{Style.RESET_ALL}
+and come back to it in a little bit, it's too early for this.
 """)
         player_choice = input("""
 It feels like all hope is gone and your mind is blank, what to do?
@@ -106,11 +109,11 @@ def good_choice_two():
         print(f"""
 \n----------------------------------------------------------------------------\n
 It's a lot of work! But you're sticking with it. It doesn't make complete sense
-but that's ok. You're starting to understand what you can do even if you can't
-write it alone or even recite what was on the previous page. But it's enough.
-Maybe if you grabbed a snack, some {Fore.GREEN}'chocolate'{Style.RESET_ALL}?
-It would all make sense. Or take a sip of your drink and play with the
-{Fore.GREEN}'code'{Style.RESET_ALL} to figure out how it works.
+but that's okay. You're starting to understand what you can do, even if you
+can't write it alone or even recite what was on the previous page, but it's
+enough. Maybe if you grabbed a snack, some {Fore.GREEN}'chocolate'
+{Style.RESET_ALL}? It would all make sense. Or take a sip of your drink and
+play with the {Fore.GREEN}'code'{Style.RESET_ALL} to figure out how it works.
 """)
         player_choice = input("""
 It's so easy to get distracted, what will you do?
@@ -142,10 +145,10 @@ def good_choice_three():
         print(f"""
 \n----------------------------------------------------------------------------\n
 You've done it! You've worked hard and pushed through to get another day done.
-Now the day is yours to enjoy, deep breath and relax those shoulders!
-You've commited and pushed your code for the day and you're ahead of schedule!
-You can close your terminal by typing {Fore.GREEN}'quit'{Style.RESET_ALL} or
-guess the secret {Fore.GREEN}'password'{Style.RESET_ALL}.
+Now the day is yours to enjoy. Take a deep breath and relax those shoulders!
+You've committed and pushed your code for the day, and you're ahead of
+schedule! You can close your terminal by typing {Fore.GREEN}'quit'
+{Style.RESET_ALL} or guess the secret {Fore.GREEN}'password'{Style.RESET_ALL}.
 """)
         player_choice = input(f"""
 Secret {Fore.GREEN}'password'{Style.RESET_ALL}, hmm. What could it be?
@@ -175,10 +178,10 @@ def good_choice_end_one():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-It's been a couple of hours now, you've watched a man making stone age tools
-using only his hands. You've seen an American couple convert a van in to a
-campervan. And you've watched several episodes of How It's Made... None of this
-is getting work done! Are you just going to watch {Fore.GREEN}'more'
+It's been a couple of hours now, and you've watched a man make Stone Age tools
+using only his hands. You've seen an American couple convert a van into a
+Camper van. And you've watched several episodes of How It's Made... None of
+this is getting work done! Are you just going to watch {Fore.GREEN}'more'
 {Style.RESET_ALL} videos? Or back to {Fore.GREEN}'bed'{Style.RESET_ALL}!?
 """)
         player_choice = input("""
@@ -189,17 +192,17 @@ You haven't done anything! Do not turn this computer off! Hello?
             print("""
 \n----------------------------------------------------------------------------\n
 Bonsai trimming masters. Bob Ross paintings. Theme park histories. The world
-Rock climbing championships, worldwide backpacking videos, DIY aquariums and
-Independent film making. You've wasted another day in a YouTube rabbit hole!
+Rock climbing championships, worldwide backpacking videos, DIY aquariums, and
+Independent filmmaking. You've wasted another day in a YouTube rabbit hole!
 """)
             game_over()
             break
         elif player_choice == "bed":
             print("""
 \n----------------------------------------------------------------------------\n
-Safe and warm, an episode of Family Guy playing on your phone next to you.
-You're not watching, just listening, until you drift off back to sleep. There
-will always be other days to study. Naps are priceless. Zzzzzzzzz...
+Safe and warm, an episode of Family Guy is playing on your phone next to you.
+You're not watching; you're just listening until you drift off back to sleep.
+There will always be other days to study. Naps are priceless. Zzzzzzzzz...
 """)
             game_over()
             break
@@ -218,12 +221,13 @@ def good_choice_end_two():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-Mmmm, chocolate. There's a jumbo bag of peanut M&Ms that's been waiting for you
-and today is the day! You rip open and the bag and "just a couple" turns to "a
-few more won't hurt". You look down and you've eaten more than half of a bag...
-Well, it's less than one portion left so you might as well {Fore.GREEN}'finish'
-{Style.RESET_ALL} them off! Or do you think you need a {Fore.GREEN}'milkshake'
-{Style.RESET_ALL} to wash down this tasty snack.
+Mm mm, chocolate. There's a jumbo bag of peanut M&Ms that's been waiting for
+you, and today is the day! You rip open the bag, and "just a couple" turns to
+"A few more won't hurt. You look down, and you've eaten more than half of a
+bag. Well, there's less than one portion left, so you might as well
+{Fore.GREEN}'finish'{Style.RESET_ALL} them off! Or do you think you need a
+{Fore.GREEN}'milkshake'{Style.RESET_ALL} to wash down this tasty snack.
+
 """)
         player_choice = input("""
 This isn't going to end well, what are you going to choose?
@@ -232,7 +236,7 @@ This isn't going to end well, what are you going to choose?
         if player_choice == "milkshake":
             print("""
 \n----------------------------------------------------------------------------\n
-WHAT SORT OF IDEA WAS THIS!? You were already full, now you can barely move!
+WHAT SORT OF IDEA WAS THIS!? You were already full; now you can barely move!
 You sit there with less than half a milkshake and a few M&Ms left over, but,
 we both know you're not going to stop there. After finishing both the milkshake
 and chocolate, you enter a food coma and die.
@@ -242,10 +246,10 @@ and chocolate, you enter a food coma and die.
         elif player_choice == "finish":
             print("""
 \n----------------------------------------------------------------------------\n
-TOO... MUCH... CHOCOLATE! Things have really gotten out of hand and now you
+TOO. MUCH. CHOCOLATE! Things have really gotten out of hand, and now you
 feel too sick to study. What a day... You can go out later and buy a new bag to
-replace the one you've devoured today. What are the chances this will happen
-again tomorrow?
+replace the one you've devoured today. What are the chances that this will
+happen again tomorrow?
 """)
             game_over()
             break
@@ -270,14 +274,16 @@ def secret_ending():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-The password was password!? You need to change that... Unbelievable. Apart from
-that, you're becoming a code master! Projects submitted and your hard work is
-starting to pay off. You're having fun and killing it. Maybe it's time for some
-{Fore.GREEN}'music'{Style.RESET_ALL}.
+The password was password!? You need to change that. Unbelievable. Apart from
+that, you're becoming a code master! Projects have been submitted, and your
+hard work is starting to pay off. You're having fun and killing it. Maybe it's
+time for some {Fore.GREEN}'music'{Style.RESET_ALL}.
 Or a terrible {Fore.GREEN}'joke'{Style.RESET_ALL}?
 Are you just here for the {Fore.GREEN}'hero'{Style.RESET_ALL} ending? Typical.
+
+
 """)
-        player_choice = input("\n")
+        player_choice = input("Final choice, no pressure!")
         player_choice = player_choice.lower()
         if player_choice == "music":
             print("""
@@ -303,11 +309,11 @@ He's fluent in Python!
         elif player_choice == "hero":
             print(f"""
 \n----------------------------------------------------------------------------\n
-Your hard work has been noticed and you're noticed by top companies on LinkedIn
-Using your coding knowledge you've built apps that detect and help eliminate
-almost every known disease to humankind. Oh, and you're like super rich. And
-erm, lots of very attractive, funny, amazing people all want to marry you!
-
+Your hard work has been noticed, and you're noticed by top companies on
+LinkedIn. Using your coding knowledge, you've built apps that detect and help
+eliminate almost every known disease to humankind. Oh, and you're like super
+rich. And erm, lots of very attractive, funny, amazing people all want to marry
+you!
 Excellent work, you're a god among coders <3
 """)
             break
@@ -332,9 +338,9 @@ def bad_choice_one():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-Just one lttle game right? You boot up World of Warcraft to check your mailbox
-and somebody is starting a group for that dungeon you need! You can get so many
-quests done in one quick run. Let's go, finish {Fore.GREEN}'fast'
+Just one little game, right? You boot up World of Warcraft to check your
+mailbox and somebody is starting a group for that dungeon you need! You can get
+so many quests done in one quick run. Let's go, finish {Fore.GREEN}'fast'
 {Style.RESET_ALL} and get back to studying! Or {Fore.GREEN}'close'
 {Style.RESET_ALL} the game and focus up. You've probably delayed things enough.
 """)
@@ -370,9 +376,10 @@ def bad_choice_two():
 Focus, focus, focus! You're in the zone! The study zone! No more stalling. You
 open up your emails to clear out all the spam and see if there are any updates
 from your course provider. You've won an air fryer! It's not a competition you
-remember entering but it IS a free air fryer. Let's {Fore.GREEN}'claim'
+remember entering, but it IS a free air fryer. Let's {Fore.GREEN}'claim'
 {Style.RESET_ALL} it! Or delete it and just go back to a {Fore.GREEN}'regular'
-{Style.RESET_ALL} non air frying lifestlye.
+{Style.RESET_ALL} non-air-frying lifestyle.
+
 """)
         player_choice = input("""
 Uh oh! Can you resist that perfectly cooked crispy goodness?
@@ -386,8 +393,8 @@ Uh oh! Can you resist that perfectly cooked crispy goodness?
 \n----------------------------------------------------------------------------\n
 You click CLAIM NOW. Download the claim form to fill out and... Hmm, your mouse
 has stopped working. Ctrl+Alt+Del... nope. Alt+F4... nope. ESC ESC! Files
-downloading? This isn't good! You PC powers down and won't reboot. It's not a
-cheap life lesson but it's an important one. Your game is over!
+downloading? This isn't good! Your PC powers down and won't reboot. It's not a
+cheap life lesson, but it's an important one. Your game is over!
 """)
             game_over()
             break
@@ -412,8 +419,8 @@ def bad_choice_three():
 \n----------------------------------------------------------------------------\n
 You're struggling to start, but you're still trying your best! I mean, how many
 more distractions could there possible be? It's hard to concentrate on an empty
-stomach. Your stomach grumbles away, you go to the kitchen to check for food.
-There's nothing that catches your eye, just a quick run to the local
+stomach. Your stomach grumbles away, and you go to the kitchen to check for
+food. There's nothing that catches your eye, just a quick run to the local
 {Fore.GREEN}'shop'{Style.RESET_ALL} to pick up some treats. Make something with
 what you already have at {Fore.GREEN}'home'{Style.RESET_ALL}, you need to get
 started with this work!
@@ -428,11 +435,11 @@ Make a something with food you have at home or go out shopping?
         elif player_choice == "shop":
             print("""
 \n----------------------------------------------------------------------------\n
-You put on some shoes and head out to the shops, on your walk there you notice
-an advertisement for 50% off a Playstation 5 at a store not far from here. WOW!
-This is too good to pass up, you forget how hungry you are and are consumed
-only by the dream of finally owning a next gen console. Your hands slowly morph
-in to controller shaped claws and you're no longer able to study.
+You put on some shoes and head out to the shops. On your walk there, you notice
+an advertisement for 50% off a PlayStation 5 at a store not far from here. WOW!
+This is too good to pass up; you forget how hungry you are and are consumed
+only by the dream of finally owning a next-gen console. Your hands slowly morph
+into controller-shaped claws, and you're no longer able to study.
 """)
             game_over()
             break
@@ -455,28 +462,28 @@ def bad_choice_four():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-You've finished your drink, ate your food, been distracted and came though it
-all and you're still here. It's not always easy but you should be rewarded for
-your efforts! Open up your {Fore.GREEN}'IDE'{Style.RESET_ALL} and get to work,
-the day is wasting away. Let's get something written. It doesn't have to be
-world changing but every little step is progress. Or is it more a {Fore.GREEN}
-'face'{Style.RESET_ALL} down on the keyboard and cry kind of day?
+You've finished your drink, eaten your food, been distracted, and come through
+it all, and you're still here. It's not always easy, but you should be rewarded
+for your efforts! Open up your {Fore.GREEN}'IDE'{Style.RESET_ALL} and get to
+work; the day is wasting away. Let's get something written. It doesn't have to
+be world changing, but every little step is progress. Or is it more a
+{Fore.GREEN}'face'{Style.RESET_ALL} down on the keyboard and cry kind of day?
 """)
         player_choice = input("You're so close... Write something, anything!")
         player_choice = player_choice.lower()
         if player_choice == "ide":
             print("""
 \n----------------------------------------------------------------------------\n
-You're in and writing! It's not fast and it's not flashy but it's progress!
-It's a marathon not a sprint and you're still here at the finish line. Great
-effort! Another day you've made a step in the right direction. Well done :)
+You're in and writing! It's not fast, and it's not flashy, but it's progress!
+It's a marathon, not a sprint, and you're still here at the finish line. Great
+effort! Another day, you've made a step in the right direction. Well done :)
 """)
             break
         elif player_choice == "face":
             print("""
 \n----------------------------------------------------------------------------\n
-We've all been there, it's just not your day. Take a break, grab a cup of tea,
-don't get downhearted and you can try again tomorrow. It's not the perfect run
+We've all been there; it's just not your day. Take a break, grab a cup of tea,
+don't get downhearted, and you can try again tomorrow. It's not the perfect run
 but you've put the work in! Good job trying your best.
 """)
             break
@@ -501,12 +508,12 @@ def bad_choice_end():
     while True:
         print(f"""
 \n----------------------------------------------------------------------------\n
-It's been two hours of dying in a dungeon, with the same angry group of kids.
-They've insulted your mom, your pc, your dog, your voice. It's all your fault,
-apparently... Do you unleash your inner {Fore.GREEN}'demon'{Style.RESET_ALL}
-and rage at these nerds? Can you keep your cool and {Fore.GREEN}'clear'
-{Style.RESET_ALL} the last boss? Or {Fore.GREEN}'ragequit'{Style.RESET_ALL} out
-and leave them to it?
+It's been two hours of dying in a dungeon with the same angry group of kids.
+They've insulted your mom, your PC, your dog, and your voice. It's all your
+fault, apparently... Do you unleash your inner {Fore.GREEN}'demon'
+{Style.RESET_ALL} and rage at these nerds? Can you keep your cool and
+{Fore.GREEN}'clear' {Style.RESET_ALL} the last boss? Or {Fore.GREEN}'ragequit'
+{Style.RESET_ALL} out and leave them to it?
 """)
         player_choice = input("""
 I mean there are no right answers now are there, what do you think?
@@ -515,27 +522,27 @@ I mean there are no right answers now are there, what do you think?
         if player_choice == "demon":
             print("""
 \n----------------------------------------------------------------------------\n
-CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS USING EVERY EXPLITIVE YOU
+CAPS MODE ACTIVATED! YOU RAGE AND SMASH AT THE KEYS, USING EVERY EXPLETIVE YOU
 KNOW! KEYCAPS ARE FLYING! THE SCREEN FLICKERS AND FALLS FROM THE TABLE AS YOUR
-INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY, THIS IS YOUR LIFE NOW!
+INNER HULK BREAKS FREE. THERE WILL BE NO STUDYING TODAY; THIS IS YOUR LIFE NOW!
 """)
             game_over()
             break
         elif player_choice == "clear":
             print("""
 \n----------------------------------------------------------------------------\n
-You hide the chat window and keep doing what you're doing. It takes a while and
-a couple more attempts but you get the dungeon finished. Your quests are done!
-Success. Wait, it's getting dark and we didn't study!? Uh oh...
+You hide the chat window and keep doing what you're doing. It takes a while,
+and a couple more attempts, but you get the dungeon finished. Your quests are
+done! Success. Wait, it's getting dark and we didn't study!? Uh oh...
 """)
             game_over()
             break
         elif player_choice == "ragequit":
             print("""
 \n----------------------------------------------------------------------------\n
-You close the game, throw your headset on the keyboard and stare in to the
-middle distance. Energy levels depleted and filled with a fresh hatred for
-anybody and everybody. Maybe online gaming just isn't for you, maybe you should
+You close the game, throw your headset on the keyboard, and stare into the
+middle distance. Energy levels were depleted and filled with a fresh hatred for
+anybody and everybody. Maybe online gaming just isn't for you; maybe you should
 delete the games and remove that temptation for next time?
 """)
             game_over()
@@ -628,7 +635,7 @@ print("""
   `----------------------------------------------------'
 """)
 print(f"""
-Welcome to 'A day in the life', A text based adventure through a day in the
+Welcome to 'A Day in the Life', a text-based adventure through a day in the
 life of a coding student. All you need to do is type out the {Fore.GREEN}
 'keyword'{Style.RESET_ALL} highlighted in quotes to progress through the day.
 You can also type the keyword {Fore.GREEN}'quit'{Style.RESET_ALL} at any point

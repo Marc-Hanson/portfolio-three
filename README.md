@@ -15,23 +15,23 @@
 ## Features
 - Upon running the game you are greeted with a picture of a keyboard and screen is ASCII art format. <br>
 ![ASCII ART](assets/readme/ascii.jpg)<br>
-
+<br>
 
 - All 3 options are working answers and have small custom messages, and once 'ready' is entered the game will begin. Other responses will give the user feeedback to provide a different answer.<br>
 ![USER INPUT](assets/readme/ready.jpg)<br>
-
+<br>
 
 - Once 'ready' is entered the game will begin and the story starts.<br>
 ![START](assets/readme/game_started.jpg)<br>
-
+<br>
 
 - All inputs are checked and feedback is given to the player incase of mistakes. <br>
 ![WRONG ANSWER](assets/readme/wrong.jpg)<br>
-
+<br>
 
 - All notes and comments in the run.py file follow the projects map which is provided in both the assets file as well as below. The 'good day' path is on the right side of the map, and the 'bad day' path is taken through the left side.<br>
 ![MAP](assets/readme/the_map.jpg)<br>
-
+<br>
 
 - The left side of the map is viewed as a bad day and the right side as a good day. Both sides have the same amount of dead ends as well as both having successful game endings.
 
@@ -78,7 +78,7 @@
 ## Validator Testing
 The project was ran through ![CI LINTER](https://pep8ci.herokuapp.com/)<br>
 ![LINTER](assets/readme/linter.jpg)<br>
-
+<br>
 
 ## Deployment
 
