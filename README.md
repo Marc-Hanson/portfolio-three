@@ -3,7 +3,7 @@
 
 ## A Day in the Life is a text adventure that allows the player to experience a day in the life of a full-stack software development student. It has two main forks: following a good day or a bad day, both of which have successful and unsuccessful endings. The user is given selected keywords to progress to the next node, which are highlighted in green.
 
-#### Live Site [Here](https://a-day-in-the-life-ae933bba8572.herokuapp.com/)
+#### Live Site [Here](https://portfolio-three-f2f766b31368.herokuapp.com/)
 
 #### How to play
 - Keywords are highlighted in green and are contained in single quotes.
